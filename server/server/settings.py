@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'django-insecure-sz@madp0ifx!b)^lg_g!f+5s*w7w_=sjgq-k+erzb%x42$^r!d'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = os.environ.get('DEBUG', 'True') == 'True'
 
 LOGGING = {
     'version': 1,
@@ -34,10 +34,14 @@ LOGGING = {
             'class': 'logging.FileHandler',
             'filename': os.path.join(BASE_DIR, 'info.log'),
         },
+        'console': {
+            'level': 'INFO',
+            'class': 'logging.StreamHandler',
+        },
     },
     'loggers': {
         'django': {
-            'handlers': ['file'],
+            'handlers': ['file', 'console'],
             'level': 'INFO',
             'propagate': True,
         },
@@ -45,10 +49,7 @@ LOGGING = {
 }
 
 
-ALLOWED_HOSTS = [
-    'mytest.com',
-    '127.0.0.1'
-]
+ALLOWED_HOSTS = ["*"]
 
 # Application definition
 
@@ -102,11 +103,11 @@ WSGI_APPLICATION = 'server.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'your-db-name',
-        'USER': 'root',
-        'PASSWORD': 'xxxxxxxx',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+        'NAME': os.environ.get('DB_NAME', 'web_b2b'),
+        'USER': os.environ.get('DB_USER', 'root'),
+        'PASSWORD': os.environ.get('DB_PASSWORD', 'root123456'),
+        'HOST': os.environ.get('DB_HOST', '127.0.0.1'),
+        'PORT': os.environ.get('DB_PORT', '3306'),
         'CONN_MAX_AGE': 60,  # 连接复用时间
         'OPTIONS': {
             'charset': 'utf8mb4',
@@ -160,7 +161,9 @@ MEDIA_URL = '/upload/'
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
@@ -192,4 +195,4 @@ SENDER_PASS = 'xxxxxxxxxxxxxxxxxxxxx'
 
 # 域名
 # BASE_HOST_URL = 'http://127.0.0.1:8000'
-BASE_HOST_URL = 'http://mytest.com'
+BASE_HOST_URL = 'http://8.208.93.138'

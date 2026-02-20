@@ -1,0 +1,150 @@
+nohup: ignoring input
+
+> web@0.1.0 start
+> next start
+
+  ▲ Next.js 14.2.21
+  - Local:        http://localhost:3000
+
+ ✓ Starting...
+ ✓ Ready in 499ms
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot read properties of null (reading 'bannerData')
+    at i (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10550)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '104434883'
+}
+TypeError: Cannot read properties of null (reading 'seoData')
+    at Module.n (/root/web_b2b/web/.next/server/app/(index)/page.js:1:10946)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '312619611'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}
+TypeError: Cannot destructure property 'navSectionData' of '(intermediate value)' as it is null.
+    at p (/root/web_b2b/web/.next/server/chunks/9024.js:23:57)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5) {
+  digest: '1861289500'
+}

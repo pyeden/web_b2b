@@ -1,0 +1,714 @@
+2026/01/18 05:21:12 [notice] 1#1: using the "epoll" event method
+2026/01/18 05:21:12 [notice] 1#1: nginx/1.25.5
+2026/01/18 05:21:12 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+2026/01/18 05:21:12 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 05:21:12 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 05:21:12 [notice] 1#1: start worker processes
+2026/01/18 05:21:12 [notice] 1#1: start worker process 21
+2026/01/18 05:21:12 [notice] 1#1: start worker process 22
+2026/01/18 05:21:12 [notice] 1#1: start worker process 23
+2026/01/18 05:21:12 [notice] 1#1: start worker process 24
+2026/01/18 05:23:22 [error] 21#21: *1 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post-new.php?post_type=page"
+2026/01/18 05:25:34 [error] 24#24: *3 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post-new.php?post_type=page"
+2026/01/18 05:26:04 [error] 24#24: *3 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 05:26:05 [error] 24#24: *3 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:26:05 [error] 23#23: *4 open() "/app/web/wp-json/elementor/v1/checklist/user-progress" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "GET /wp-json/elementor/v1/checklist/user-progress HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:26:20 [error] 24#24: *3 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:27:05 [error] 24#24: *3 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 05:28:21 [error] 21#21: *5 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:29:06 [error] 21#21: *5 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 05:30:22 [error] 21#21: *7 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:31:07 [error] 21#21: *7 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 05:31:32 [error] 21#21: *7 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post-new.php?post_type=page"
+2026/01/18 05:31:37 [error] 21#21: *7 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post-new.php?post_type=page"
+2026/01/18 05:32:23 [error] 21#21: *7 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:33:08 [error] 21#21: *7 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 05:34:24 [error] 21#21: *9 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:35:09 [error] 21#21: *9 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 05:36:25 [error] 21#21: *11 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:37:45 [error] 21#21: *13 access forbidden by rule, client: 34.253.239.169, server: xxxxx.com, request: "GET /.git/config HTTP/1.1", host: "8.208.93.138:80"
+2026/01/18 05:38:26 [error] 21#21: *14 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:40:27 [error] 21#21: *16 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:42:28 [error] 21#21: *18 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:44:29 [error] 21#21: *20 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:46:31 [error] 22#22: *22 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:48:28 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 05:48:28 [notice] 21#21: gracefully shutting down
+2026/01/18 05:48:28 [notice] 22#22: gracefully shutting down
+2026/01/18 05:48:28 [notice] 21#21: exiting
+2026/01/18 05:48:28 [notice] 22#22: exiting
+2026/01/18 05:48:28 [notice] 21#21: exit
+2026/01/18 05:48:28 [notice] 22#22: exit
+2026/01/18 05:48:28 [notice] 24#24: gracefully shutting down
+2026/01/18 05:48:28 [notice] 24#24: exiting
+2026/01/18 05:48:28 [notice] 24#24: exit
+2026/01/18 05:48:28 [notice] 23#23: gracefully shutting down
+2026/01/18 05:48:28 [notice] 23#23: exiting
+2026/01/18 05:48:28 [notice] 23#23: exit
+2026/01/18 05:48:28 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 05:48:28 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 05:48:28 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 05:48:28 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 05:48:28 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 05:48:28 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 05:48:28 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 05:48:28 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 05:48:28 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 05:48:28 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 05:48:28 [notice] 1#1: exit
+2026/01/18 05:48:28 [notice] 1#1: using the "epoll" event method
+2026/01/18 05:48:28 [notice] 1#1: nginx/1.25.5
+2026/01/18 05:48:28 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+2026/01/18 05:48:28 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 05:48:28 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 05:48:28 [notice] 1#1: start worker processes
+2026/01/18 05:48:28 [notice] 1#1: start worker process 21
+2026/01/18 05:48:28 [notice] 1#1: start worker process 22
+2026/01/18 05:48:28 [notice] 1#1: start worker process 23
+2026/01/18 05:48:28 [notice] 1#1: start worker process 24
+2026/01/18 05:48:31 [error] 21#21: *1 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:49:58 [error] 24#24: *3 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post-new.php?post_type=page"
+2026/01/18 05:50:32 [error] 24#24: *3 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 05:50:33 [error] 21#21: *10 directory index of "/app/web/" is forbidden, client: 123.6.49.47, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138"
+2026/01/18 05:51:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 05:51:40 [notice] 21#21: gracefully shutting down
+2026/01/18 05:51:40 [notice] 22#22: gracefully shutting down
+2026/01/18 05:51:40 [notice] 23#23: gracefully shutting down
+2026/01/18 05:51:40 [notice] 21#21: exiting
+2026/01/18 05:51:40 [notice] 22#22: exiting
+2026/01/18 05:51:40 [notice] 23#23: exiting
+2026/01/18 05:51:40 [notice] 24#24: gracefully shutting down
+2026/01/18 05:51:40 [notice] 21#21: exit
+2026/01/18 05:51:40 [notice] 22#22: exit
+2026/01/18 05:51:40 [notice] 24#24: exiting
+2026/01/18 05:51:40 [notice] 24#24: exit
+2026/01/18 05:51:40 [notice] 23#23: exit
+2026/01/18 05:51:40 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 05:51:40 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 05:51:40 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 05:51:40 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 05:51:40 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 05:51:40 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 05:51:40 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 05:51:40 [notice] 1#1: exit
+2026/01/18 05:52:51 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:52:51 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:52:52 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:52:52 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:52:53 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:52:55 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:52:59 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:53:05 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:53:18 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 05:53:44 [emerg] 1#1: duplicate location "/" in /etc/nginx/conf.d/default.conf:106
+2026/01/18 06:01:07 [notice] 1#1: using the "epoll" event method
+2026/01/18 06:01:07 [notice] 1#1: nginx/1.25.5
+2026/01/18 06:01:07 [notice] 1#1: built by gcc 13.2.1 20231014 (Alpine 13.2.1_git20231014) 
+2026/01/18 06:01:07 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 06:01:07 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 06:01:07 [notice] 1#1: start worker processes
+2026/01/18 06:01:07 [notice] 1#1: start worker process 21
+2026/01/18 06:01:07 [notice] 1#1: start worker process 22
+2026/01/18 06:01:07 [notice] 1#1: start worker process 23
+2026/01/18 06:01:07 [notice] 1#1: start worker process 24
+2026/01/18 06:01:47 [error] 21#21: *1 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138"
+2026/01/18 06:02:38 [error] 21#21: *1 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 06:04:39 [error] 21#21: *12 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 06:05:40 [error] 21#21: *12 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/plugins.php?plugin_status=all&paged=1&s"
+2026/01/18 06:05:41 [error] 21#21: *14 open() "/app/web/wp-admin/admin-ajax.php" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "POST /wp-admin/admin-ajax.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 06:05:41 [error] 21#21: *15 open() "/app/web/wp-json/elementor/v1/checklist/user-progress" failed (2: No such file or directory), client: 125.85.69.237, server: xxxxx.com, request: "GET /wp-json/elementor/v1/checklist/user-progress HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wp-admin/post.php?post=37&action=elementor"
+2026/01/18 06:05:57 [error] 21#21: *18 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138"
+2026/01/18 06:06:15 [error] 21#21: *18 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138"
+2026/01/18 06:06:44 [error] 21#21: *18 directory index of "/app/web/" is forbidden, client: 125.85.69.237, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138"
+2026/01/18 06:06:49 [error] 21#21: *20 open() "/app/web/login" failed (2: No such file or directory), client: 144.31.215.24, server: xxxxx.com, request: "GET /login HTTP/1.1", host: "8.208.93.138:80"
+2026/01/18 06:06:49 [error] 21#21: *21 directory index of "/app/web/" is forbidden, client: 144.31.215.24, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138:80"
+2026/01/18 06:08:14 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:15 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:15 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:15 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:15 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:16 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:16 [error] 21#21: *26 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:17 [error] 23#23: *27 "/app/web/app/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /app/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/app/"
+2026/01/18 06:08:17 [error] 21#21: *26 "/app/web/api/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/"
+2026/01/18 06:08:17 [error] 23#23: *30 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:17 [error] 23#23: *32 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:17 [error] 23#23: *33 open() "/app/web/api" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api"
+2026/01/18 06:08:17 [error] 23#23: *30 "/app/web/h5/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /h5/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/h5/"
+2026/01/18 06:08:17 [error] 21#21: *26 open() "/app/web/api/im/v2/app/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/im/v2/app/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/im/v2/app/config"
+2026/01/18 06:08:17 [error] 23#23: *27 "/app/web/m/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /m/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/m/"
+2026/01/18 06:08:17 [error] 23#23: *33 open() "/app/web/h5" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /h5 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/h5"
+2026/01/18 06:08:17 [error] 21#21: *26 "/app/web/a/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /a/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/a/"
+2026/01/18 06:08:17 [error] 23#23: *27 open() "/app/web/035/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /035/index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/035/index.html"
+2026/01/18 06:08:17 [error] 23#23: *32 open() "/app/web/055/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /055/index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/055/index.html"
+2026/01/18 06:08:17 [error] 23#23: *30 open() "/app/web/index/login" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/login HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/login"
+2026/01/18 06:08:17 [error] 23#23: *28 open() "/app/web/067/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /067/index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/067/index.html"
+2026/01/18 06:08:17 [error] 23#23: *33 "/app/web/7/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /7/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/7/"
+2026/01/18 06:08:17 [error] 23#23: *31 open() "/app/web/062/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /062/index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/062/index.html"
+2026/01/18 06:08:17 [error] 23#23: *32 open() "/app/web/v2" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /v2 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/v2"
+2026/01/18 06:08:17 [error] 21#21: *26 "/app/web/xy/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /xy/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/xy/"
+2026/01/18 06:08:18 [error] 23#23: *29 "/app/web/im/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /im/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/im/"
+2026/01/18 06:08:18 [error] 23#23: *30 "/app/web/h5/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /h5/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/h5/"
+2026/01/18 06:08:18 [error] 23#23: *27 open() "/app/web/wap" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /wap HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wap"
+2026/01/18 06:08:18 [error] 23#23: *31 "/app/web/vip/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /vip/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/vip/"
+2026/01/18 06:08:18 [error] 23#23: *33 "/app/web/pc/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /pc/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/pc/"
+2026/01/18 06:08:18 [error] 23#23: *28 "/app/web/wap/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /wap/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wap/"
+2026/01/18 06:08:18 [error] 23#23: *29 open() "/app/web/chat" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /chat HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/chat"
+2026/01/18 06:08:18 [error] 23#23: *27 open() "/app/web/api/ipa/download_app_info" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/ipa/download_app_info HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/ipa/download_app_info"
+2026/01/18 06:08:18 [error] 23#23: *31 "/app/web/imei/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /imei/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/imei/"
+2026/01/18 06:08:18 [error] 23#23: *30 "/app/web/appx/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /appx/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/appx/"
+2026/01/18 06:08:18 [error] 23#23: *28 "/app/web/apps/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /apps/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/apps/"
+2026/01/18 06:08:18 [error] 23#23: *32 "/app/web/syn/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /syn/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/syn/"
+2026/01/18 06:08:18 [error] 23#23: *33 open() "/app/web/login" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /login HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/login"
+2026/01/18 06:08:18 [error] 23#23: *27 "/app/web/homes/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /homes/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/homes/"
+2026/01/18 06:08:18 [error] 23#23: *33 open() "/app/web/mobile" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile"
+2026/01/18 06:08:18 [error] 23#23: *31 open() "/app/web/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/config"
+2026/01/18 06:08:18 [error] 23#23: *30 "/app/web/im/h5/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /im/h5/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/im/h5/"
+2026/01/18 06:08:18 [error] 23#23: *32 open() "/app/web/1.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /1.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/1.html"
+2026/01/18 06:08:18 [error] 23#23: *28 "/app/web/page/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /page/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/page/"
+2026/01/18 06:08:18 [error] 23#23: *27 open() "/app/web/zz.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /zz.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/zz.php"
+2026/01/18 06:08:18 [error] 23#23: *29 open() "/app/web/chat/1" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /chat/1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/chat/1"
+2026/01/18 06:08:18 [error] 23#23: *33 "/app/web/chat/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /chat/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/chat/"
+2026/01/18 06:08:19 [error] 23#23: *31 open() "/app/web/api.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api.php"
+2026/01/18 06:08:19 [error] 23#23: *28 "/app/web/mobile/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile/"
+2026/01/18 06:08:19 [error] 23#23: *32 "/app/web/m/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /m/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/m/"
+2026/01/18 06:08:19 [error] 21#21: *26 "/app/web/jym-wn/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /jym-wn/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/jym-wn/"
+2026/01/18 06:08:19 [error] 23#23: *29 open() "/app/web/pc.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /pc.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/pc.html"
+2026/01/18 06:08:19 [error] 23#23: *33 open() "/app/web/api/c/a" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/c/a HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/c/a"
+2026/01/18 06:08:19 [error] 23#23: *30 open() "/app/web/m.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /m.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/m.html"
+2026/01/18 06:08:19 [error] 23#23: *28 "/app/web/app_cn/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /app_cn/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/app_cn/"
+2026/01/18 06:08:19 [error] 23#23: *32 "/app/web/snake/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /snake/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/snake/"
+2026/01/18 06:08:19 [error] 23#23: *27 open() "/app/web/platform" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /platform HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/platform"
+2026/01/18 06:08:19 [error] 23#23: *29 open() "/app/web/api/init" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/init HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/init"
+2026/01/18 06:08:19 [error] 23#23: *31 open() "/app/web/api/ping" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/ping HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/ping"
+2026/01/18 06:08:19 [error] 23#23: *30 open() "/app/web/yjhx.txt" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /yjhx.txt HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/yjhx.txt"
+2026/01/18 06:08:19 [error] 23#23: *28 open() "/app/web/getLocale" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /getLocale HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/getLocale"
+2026/01/18 06:08:19 [error] 21#21: *26 open() "/app/web/site/info" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /site/info HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/site/info"
+2026/01/18 06:08:19 [error] 23#23: *32 open() "/app/web/ay-1.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /ay-1.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/ay-1.html"
+2026/01/18 06:08:19 [error] 21#21: *26 open() "/app/web/join_room" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /join_room HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/join_room"
+2026/01/18 06:08:19 [error] 23#23: *27 open() "/app/web/360.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /360.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/360.html"
+2026/01/18 06:08:19 [error] 23#23: *29 open() "/app/web/join_room" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /join_room HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/join_room"
+2026/01/18 06:08:20 [error] 23#23: *31 "/app/web/app/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /app/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/app/"
+2026/01/18 06:08:20 [error] 23#23: *28 open() "/app/web/index/aurl" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/aurl HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/aurl"
+2026/01/18 06:08:20 [error] 23#23: *32 open() "/app/web/api/notice" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/notice HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/notice"
+2026/01/18 06:08:20 [error] 21#21: *26 open() "/app/web/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index.html"
+2026/01/18 06:08:20 [error] 23#23: *27 open() "/app/web/categories" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /categories HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/categories"
+2026/01/18 06:08:20 [error] 23#23: *29 open() "/app/web/code1.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /code1.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/code1.html"
+2026/01/18 06:08:20 [error] 23#23: *30 open() "/app/web/home/index" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /home/index HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/home/index"
+2026/01/18 06:08:20 [error] 23#23: *33 "/app/web/yongxing/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /yongxing/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/yongxing/"
+2026/01/18 06:08:20 [error] 23#23: *28 "/app/web/xingkong/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /xingkong/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/xingkong/"
+2026/01/18 06:08:20 [error] 23#23: *31 open() "/app/web/api/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/config"
+2026/01/18 06:08:20 [error] 23#23: *32 open() "/app/web/api" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api?code=1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api%3Fcode%3D1"
+2026/01/18 06:08:20 [error] 21#21: *26 open() "/app/web/api/events" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/events HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/events"
+2026/01/18 06:08:20 [error] 23#23: *30 open() "/app/web/js/a.script" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /js/a.script HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/js/a.script"
+2026/01/18 06:08:20 [error] 23#23: *29 "/app/web/js/post.js/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /js/post.js/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/js/post.js/"
+2026/01/18 06:08:20 [error] 23#23: *33 open() "/app/web/mindex.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mindex.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mindex.html"
+2026/01/18 06:08:20 [error] 23#23: *31 open() "/app/web/common/init" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /common/init HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/common/init"
+2026/01/18 06:08:20 [error] 21#21: *26 open() "/app/web/shouye.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /shouye.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/shouye.html"
+2026/01/18 06:08:20 [error] 23#23: *27 open() "/app/web/h1/kf.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /h1//kf.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/h1//kf.html"
+2026/01/18 06:08:20 [error] 23#23: *29 open() "/app/web/user/reg.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /user/reg.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/user/reg.php"
+2026/01/18 06:08:20 [error] 23#23: *33 open() "/app/web/f/user/index" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /f/user/index HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/f/user/index"
+2026/01/18 06:08:20 [error] 23#23: *31 open() "/app/web/apis/globals" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /apis/globals HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/apis/globals"
+2026/01/18 06:08:21 [error] 23#23: *28 open() "/app/web/AppInfo.aspx" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /AppInfo.aspx HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/AppInfo.aspx"
+2026/01/18 06:08:21 [error] 23#23: *30 open() "/app/web/m/allticker/1" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /m/allticker/1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/m/allticker/1"
+2026/01/18 06:08:21 [error] 21#21: *26 "/app/web/fePublicInfo/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /fePublicInfo/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/fePublicInfo/"
+2026/01/18 06:08:21 [error] 23#23: *33 open() "/app/web/im/App/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /im/App/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/im/App/config"
+2026/01/18 06:08:21 [error] 23#23: *27 open() "/app/web/api/v1/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/v1/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/v1/config"
+2026/01/18 06:08:21 [error] 23#23: *30 open() "/app/web/api/room/join" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/room/join HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/room/join"
+2026/01/18 06:08:21 [error] 23#23: *29 open() "/app/web/api/user/time" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/user/time HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/user/time"
+2026/01/18 06:08:21 [error] 23#23: *32 open() "/app/web/kdata/product" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /kdata/product HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/kdata/product"
+2026/01/18 06:08:21 [error] 23#23: *31 open() "/app/web/Home/Index/api" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /Home/Index/api HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/Home/Index/api"
+2026/01/18 06:08:21 [error] 23#23: *30 open() "/app/web/index.php/sign" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index.php/sign HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index.php/sign"
+2026/01/18 06:08:21 [error] 23#23: *32 open() "/app/web/Pay_Index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /Pay_Index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/Pay_Index.html"
+2026/01/18 06:08:21 [error] 23#23: *33 open() "/app/web/kuwo/kuwo.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /kuwo/kuwo.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/kuwo/kuwo.html"
+2026/01/18 06:08:21 [error] 23#23: *30 open() "/app/web/api/index/init" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/init HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/init"
+2026/01/18 06:08:21 [error] 21#21: *26 open() "/app/web/api/shop/getKF" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/shop/getKF HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/shop/getKF"
+2026/01/18 06:08:21 [error] 23#23: *28 "/app/web/addons/fastim/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /addons/fastim/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/addons/fastim/"
+2026/01/18 06:08:21 [error] 23#23: *29 open() "/app/web/api/v2/appinit" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/v2/appinit HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/v2/appinit"
+2026/01/18 06:08:21 [error] 23#23: *32 open() "/app/web/api/app/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/app/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/app/config"
+2026/01/18 06:08:21 [error] 23#23: *31 open() "/app/web/api/apps/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/apps/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/apps/config"
+2026/01/18 06:08:22 [error] 23#23: *27 open() "/app/web/api/order/lists" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/order/lists HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/order/lists"
+2026/01/18 06:08:22 [error] 23#23: *30 open() "/app/web/api/index/index" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/index HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/index"
+2026/01/18 06:08:22 [error] 23#23: *28 open() "/app/web/api/Event/basic" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/Event/basic HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/Event/basic"
+2026/01/18 06:08:22 [error] 23#23: *33 open() "/app/web/api/front/index" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/front/index HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/front/index"
+2026/01/18 06:08:22 [error] 21#21: *26 open() "/app/web/market/coinList" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /market/coinList HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/market/coinList"
+2026/01/18 06:08:22 [error] 23#23: *29 open() "/app/web/api/common/init" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/common/init HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/common/init"
+2026/01/18 06:08:22 [error] 23#23: *28 open() "/app/web/api/link-submit" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/link-submit HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/link-submit"
+2026/01/18 06:08:22 [error] 23#23: *30 open() "/app/web/share/init_data" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /share/init_data HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/share/init_data"
+2026/01/18 06:08:22 [error] 23#23: *32 open() "/app/web/api/users/login" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/users/login HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/users/login"
+2026/01/18 06:08:22 [error] 23#23: *27 open() "/app/web/api/app/banners" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/app/banners HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/app/banners"
+2026/01/18 06:08:22 [error] 23#23: *33 open() "/app/web/api/card/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/card/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/card/config"
+2026/01/18 06:08:22 [error] 23#23: *29 open() "/app/web/banner.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /banner.do?code=1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/banner.do%3Fcode%3D1"
+2026/01/18 06:08:22 [error] 23#23: *28 open() "/app/web/friendGroup/list" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /friendGroup/list HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/friendGroup/list"
+2026/01/18 06:08:22 [error] 23#23: *30 open() "/app/web/appxz/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /appxz/index.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/appxz/index.html"
+2026/01/18 06:08:22 [error] 23#23: *32 open() "/app/web/index/newapi/api" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/newapi/api HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/newapi/api"
+2026/01/18 06:08:22 [error] 23#23: *27 open() "/app/web/api/index/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/config"
+2026/01/18 06:08:22 [error] 23#23: *31 open() "/app/web/api/product/list" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/product/list HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/product/list"
+2026/01/18 06:08:22 [error] 23#23: *33 open() "/app/web/queryVersion.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /queryVersion.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/queryVersion.php"
+2026/01/18 06:08:22 [error] 21#21: *26 open() "/app/web/selectTempConfig" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /selectTempConfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/selectTempConfig"
+2026/01/18 06:08:22 [error] 23#23: *28 open() "/app/web/api/lottery/list" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/lottery/list HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/lottery/list"
+2026/01/18 06:08:22 [error] 23#23: *30 open() "/app/web/Home/Get/getJnd28" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /Home/Get/getJnd28 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/Home/Get/getJnd28"
+2026/01/18 06:08:22 [error] 23#23: *33 open() "/app/web/Public/initJs.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /Public/initJs.php HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/Public/initJs.php"
+2026/01/18 06:08:22 [error] 21#21: *26 open() "/app/web/biz/server/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /biz/server/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/biz/server/config"
+2026/01/18 06:08:22 [error] 23#23: *29 open() "/app/web/mobile/lists.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile/lists.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile/lists.html"
+2026/01/18 06:08:22 [error] 23#23: *28 open() "/app/web/mytio/config/base" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mytio/config/base HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mytio/config/base"
+2026/01/18 06:08:22 [error] 23#23: *32 open() "/app/web/mfzbs/config/base" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mfzbs/config/base HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mfzbs/config/base"
+2026/01/18 06:08:22 [error] 23#23: *27 open() "/app/web/mobile/login.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile/login.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile/login.html"
+2026/01/18 06:08:22 [error] 23#23: *33 open() "/app/web/api/app/indexList" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/app/indexList HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/app/indexList"
+2026/01/18 06:08:23 [error] 21#21: *26 open() "/app/web/api/common/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/common/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/common/config"
+2026/01/18 06:08:23 [error] 23#23: *31 open() "/app/web/mobile/index/home" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile/index/home HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile/index/home"
+2026/01/18 06:08:23 [error] 23#23: *28 open() "/app/web/API/Web/chat.ashx" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /API/Web/chat.ashx HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/API/Web/chat.ashx"
+2026/01/18 06:08:23 [error] 23#23: *30 open() "/app/web/index/login/index" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/login/index HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/login/index"
+2026/01/18 06:08:23 [error] 23#23: *32 open() "/app/web/api/Home/videoNew" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/Home/videoNew HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/Home/videoNew"
+2026/01/18 06:08:23 [error] 23#23: *27 open() "/app/web/dwcc/cnfig/setinf" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /dwcc/cnfig/setinf HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/dwcc/cnfig/setinf"
+2026/01/18 06:08:23 [error] 21#21: *26 open() "/app/web/myroom/roomStatus" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /myroom/roomStatus HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/myroom/roomStatus"
+2026/01/18 06:08:23 [error] 23#23: *31 open() "/app/web/kdata/selectMqUrl" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /kdata/selectMqUrl HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/kdata/selectMqUrl"
+2026/01/18 06:08:23 [error] 23#23: *28 open() "/app/web/mobile/preference" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile/preference HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile/preference"
+2026/01/18 06:08:23 [error] 23#23: *30 open() "/app/web/api/system/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/system/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/system/config"
+2026/01/18 06:08:23 [error] 23#23: *27 open() "/app/web/api/uploads/apimap" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/uploads/apimap HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/uploads/apimap"
+2026/01/18 06:08:23 [error] 23#23: *33 open() "/app/web/qishui/qishui.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /qishui/qishui.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/qishui/qishui.html"
+2026/01/18 06:08:23 [error] 21#21: *26 open() "/app/web/douyin/douyin.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /douyin/douyin.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/douyin/douyin.html"
+2026/01/18 06:08:23 [error] 23#23: *31 open() "/app/web/TikTok/TikTok.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /TikTok/TikTok.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/TikTok/TikTok.html"
+2026/01/18 06:08:23 [error] 23#23: *28 open() "/app/web/instatll" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /instatll?tag=matto HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/instatll%3Ftag%3Dmatto"
+2026/01/18 06:08:23 [error] 21#21: *26 open() "/app/web/home/realtime/data" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /home/realtime/data HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/home/realtime/data"
+2026/01/18 06:08:23 [error] 23#23: *30 open() "/app/web/home/index/getcode" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /home/index/getcode HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/home/index/getcode"
+2026/01/18 06:08:23 [error] 23#23: *32 open() "/app/web/api/product/getAll" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/product/getAll HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/product/getAll"
+2026/01/18 06:08:23 [error] 23#23: *27 open() "/app/web/images/step-3.webp" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /images/step-3.webp HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/images/step-3.webp"
+2026/01/18 06:08:23 [error] 21#21: *26 open() "/app/web/dapp/api/getBanner" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /dapp/api/getBanner HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/dapp/api/getBanner"
+2026/01/18 06:08:23 [error] 23#23: *29 open() "/app/web/api/site/getInfo.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/site/getInfo.do HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/site/getInfo.do"
+2026/01/18 06:08:24 [error] 23#23: *32 open() "/app/web/api/message/webInfo" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/message/webInfo HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/message/webInfo"
+2026/01/18 06:08:24 [error] 21#21: *26 open() "/app/web/api/index/webconfig" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/webconfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/webconfig"
+2026/01/18 06:08:24 [error] 23#23: *31 open() "/app/web/api/v1/setting/main" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/v1/setting/main HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/v1/setting/main"
+2026/01/18 06:08:24 [error] 23#23: *29 open() "/app/web/api/latestSdkConfig" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/latestSdkConfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/latestSdkConfig"
+2026/01/18 06:08:24 [error] 23#23: *30 open() "/app/web/api/index/gettreaty" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/gettreaty HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/gettreaty"
+2026/01/18 06:08:24 [error] 23#23: *32 open() "/app/web/wap-api/banner/list" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /wap-api/banner/list HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wap-api/banner/list"
+2026/01/18 06:08:24 [error] 21#21: *26 open() "/app/web/api/v1/seller/login" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/v1/seller/login HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/v1/seller/login"
+2026/01/18 06:08:24 [error] 23#23: *27 open() "/app/web/api/config/orderMix" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/config/orderMix HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/config/orderMix"
+2026/01/18 06:08:24 [error] 23#23: *28 open() "/app/web/api/index/agreement" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/agreement HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/agreement"
+2026/01/18 06:08:24 [error] 23#23: *33 open() "/app/web/index/user/register" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/user/register HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/user/register"
+2026/01/18 06:08:24 [error] 23#23: *32 open() "/app/web/other/getTopQuestion" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /other/getTopQuestion HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/other/getTopQuestion"
+2026/01/18 06:08:24 [error] 23#23: *33 open() "/app/web/api/getWebSiteConfig" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/getWebSiteConfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/getWebSiteConfig"
+2026/01/18 06:08:24 [error] 23#23: *31 open() "/app/web/api/homevue/getpopup" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/homevue/getpopup HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/homevue/getpopup"
+2026/01/18 06:08:24 [error] 21#21: *26 open() "/app/web/api/user/ismustmobile" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/user/ismustmobile HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/user/ismustmobile"
+2026/01/18 06:08:24 [error] 23#23: *32 open() "/app/web/api/user/ismustmobile" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/user/ismustmobile HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/user/ismustmobile"
+2026/01/18 06:08:24 [error] 23#23: *27 open() "/app/web/api/user/ismustmobile" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/user/ismustmobile HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/user/ismustmobile"
+2026/01/18 06:08:24 [error] 23#23: *29 open() "/app/web/index/home/login.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/home/login.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/home/login.html"
+2026/01/18 06:08:25 [error] 23#23: *30 open() "/app/web/procoin/config/all.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /procoin/config/all.do HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/procoin/config/all.do"
+2026/01/18 06:08:25 [error] 23#23: *28 "/app/web/iexchange/webtrader/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /iexchange/webtrader/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/iexchange/webtrader/"
+2026/01/18 06:08:25 [error] 23#23: *32 open() "/app/web/unSecurity/app/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /unSecurity/app/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/unSecurity/app/config"
+2026/01/18 06:08:25 [error] 23#23: *27 open() "/app/web/api/index/productshow" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/productshow HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/productshow"
+2026/01/18 06:08:25 [error] 23#23: *33 open() "/app/web/api/index/get_setting" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/get_setting HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/get_setting"
+2026/01/18 06:08:25 [error] 23#23: *29 open() "/app/web/api/vue/common/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/vue/common/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/vue/common/config"
+2026/01/18 06:08:25 [error] 23#23: *31 open() "/app/web/api/BaseInfo/xnb/24hr" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/BaseInfo/xnb/24hr HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/BaseInfo/xnb/24hr"
+2026/01/18 06:08:25 [error] 23#23: *30 open() "/app/web/music163/music163.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /music163/music163.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/music163/music163.html"
+2026/01/18 06:08:25 [error] 23#23: *28 open() "/app/web/index/index/getchatLog" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/index/getchatLog HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/index/getchatLog"
+2026/01/18 06:08:25 [error] 23#23: *32 open() "/app/web/apix/tongchengyue/tags" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /apix/tongchengyue/tags HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/apix/tongchengyue/tags"
+2026/01/18 06:08:25 [error] 23#23: *27 open() "/app/web/dock/system/config/get" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /dock/system/config/get HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/dock/system/config/get"
+2026/01/18 06:08:25 [error] 23#23: *33 open() "/app/web/api/Index/getHome" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/Index/getHome?id=1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/Index/getHome%3Fid%3D1"
+2026/01/18 06:08:25 [error] 23#23: *31 open() "/app/web/api/account/price_rate" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/account/price_rate HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/account/price_rate"
+2026/01/18 06:08:25 [error] 23#23: *30 open() "/app/web/api/user/language_list" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/user/language_list HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/user/language_list"
+2026/01/18 06:08:25 [error] 23#23: *29 open() "/app/web/main/config/getkefuData" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /main/config/getkefuData HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/main/config/getkefuData"
+2026/01/18 06:08:25 [error] 23#23: *31 open() "/app/web/public/api/index/config" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /public/api/index/config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/public/api/index/config"
+2026/01/18 06:08:25 [error] 21#21: *26 open() "/app/web/system.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /system.php?act=payments HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/system.php%3Fact%3Dpayments"
+2026/01/18 06:08:25 [error] 23#23: *32 open() "/app/web/api/index/getBannerList" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/index/getBannerList HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/index/getBannerList"
+2026/01/18 06:08:26 [error] 23#23: *28 open() "/app/web/api/wanlshop/common/init" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/wanlshop/common/init HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/wanlshop/common/init"
+2026/01/18 06:08:26 [error] 21#21: *26 open() "/app/web/index.php/api/index/info" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index.php/api/index/info HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index.php/api/index/info"
+2026/01/18 06:08:26 [error] 23#23: *32 open() "/app/static/voice/default.wav" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /static/voice/default.wav HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/static/voice/default.wav"
+2026/01/18 06:08:26 [error] 23#23: *29 open() "/app/web/api/banner" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/banner?appKey=bxefdn HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/banner%3FappKey%3Dbxefdn"
+2026/01/18 06:08:26 [error] 23#23: *31 open() "/app/web/api/Config/getShowConfig" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/Config/getShowConfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/Config/getShowConfig"
+2026/01/18 06:08:26 [error] 23#23: *30 open() "/app/web/api/common/findIpAddress" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/common/findIpAddress HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/common/findIpAddress"
+2026/01/18 06:08:26 [error] 23#23: *28 open() "/app/web/api/common/getAllSetting" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/common/getAllSetting HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/common/getAllSetting"
+2026/01/18 06:08:26 [error] 23#23: *32 open() "/app/web/api/apicom/index/getkefu" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/apicom/index/getkefu HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/apicom/index/getkefu"
+2026/01/18 06:08:26 [error] 23#23: *27 open() "/app/web/adm/api/im/version/check" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /adm/api/im/version/check HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/adm/api/im/version/check"
+2026/01/18 06:08:26 [error] 23#23: *33 open() "/app/web/s_api/basic/download/info" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /s_api/basic/download/info HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/s_api/basic/download/info"
+2026/01/18 06:08:26 [error] 23#23: *27 open() "/app/web/api/product/getPointStore" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/product/getPointStore HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/product/getPointStore"
+2026/01/18 06:08:26 [error] 23#23: *31 open() "/app/web/api/dict/getServiceConfig" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/dict/getServiceConfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/dict/getServiceConfig"
+2026/01/18 06:08:26 [error] 23#23: *30 open() "/app/web/mms-api/coins/hot/tickers" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /mms-api/coins/hot/tickers HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mms-api/coins/hot/tickers"
+2026/01/18 06:08:26 [error] 23#23: *28 "/app/web/prod-api/home/zixun/info/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /prod-api/home/zixun/info/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/prod-api/home/zixun/info/"
+2026/01/18 06:08:26 [error] 23#23: *33 open() "/app/web/api/currency/quotation_new" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/currency/quotation_new HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/currency/quotation_new"
+2026/01/18 06:08:27 [error] 23#23: *28 open() "/app/web/portal/index/protocol.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /portal/index/protocol.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/portal/index/protocol.html"
+2026/01/18 06:08:27 [error] 23#23: *32 open() "/app/web/server/api/site/getInfo.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /server/api/site/getInfo.do HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/server/api/site/getInfo.do"
+2026/01/18 06:08:27 [error] 23#23: *27 open() "/app/web/market/market-ws/iframe.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /market/market-ws/iframe.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/market/market-ws/iframe.html"
+2026/01/18 06:08:27 [error] 23#23: *31 open() "/app/web/Xiaohongshu/Xiaohongshu.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /Xiaohongshu/Xiaohongshu.html HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/Xiaohongshu/Xiaohongshu.html"
+2026/01/18 06:08:27 [error] 23#23: *32 open() "/app/web/melody/api/v1/base/heartbeat" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /melody/api/v1/base/heartbeat HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/melody/api/v1/base/heartbeat"
+2026/01/18 06:08:27 [error] 23#23: *30 open() "/app/web/AnMjSjfe87/policy/getVersion" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /AnMjSjfe87/policy/getVersion HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/AnMjSjfe87/policy/getVersion"
+2026/01/18 06:08:27 [error] 21#21: *26 open() "/app/web/api/chat/visitor/channelInfo" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/chat/visitor/channelInfo HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/chat/visitor/channelInfo"
+2026/01/18 06:08:27 [error] 23#23: *27 open() "/app/web/mobile/v3/appSuperDownload.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /mobile/v3/appSuperDownload.do HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/mobile/v3/appSuperDownload.do"
+2026/01/18 06:08:27 [error] 23#23: *33 open() "/app/web/forerest/user/custSrv/findOne" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /forerest/user/custSrv/findOne HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/forerest/user/custSrv/findOne"
+2026/01/18 06:08:27 [error] 23#23: *30 open() "/app/web/api/common/menus" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/common/menus?lang=zh-Hans HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/common/menus%3Flang%3Dzh-Hans"
+2026/01/18 06:08:27 [error] 21#21: *26 open() "/app/web/api/new-version/daily/rooms/1" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/new-version/daily/rooms/1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/new-version/daily/rooms/1"
+2026/01/18 06:08:27 [error] 23#23: *28 open() "/app/web/api/app/getExecutedRealOrders" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/app/getExecutedRealOrders HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/app/getExecutedRealOrders"
+2026/01/18 06:08:27 [error] 23#23: *29 open() "/app/web/getConfig/getArticle.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /getConfig/getArticle.do?code=1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/getConfig/getArticle.do%3Fcode%3D1"
+2026/01/18 06:08:27 [error] 23#23: *32 open() "/app/web/masterControl/getSystemSetting" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /masterControl/getSystemSetting HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/masterControl/getSystemSetting"
+2026/01/18 06:08:28 [error] 21#21: *26 open() "/app/web/index/index/home" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/index/home?business_id=1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/index/home%3Fbusiness_id%3D1"
+2026/01/18 06:08:28 [error] 23#23: *28 open() "/app/web/getDownloadUrl" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /getDownloadUrl?appType=Android HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/getDownloadUrl%3FappType%3DAndroid"
+2026/01/18 06:08:28 [error] 23#23: *27 open() "/app/web/api/app/getserviceinfo" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/app/getserviceinfo?token=1 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/app/getserviceinfo%3Ftoken%3D1"
+2026/01/18 06:08:28 [error] 23#23: *29 open() "/app/web/api/app/contract/getMarketList" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/app/contract/getMarketList HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/app/contract/getMarketList"
+2026/01/18 06:08:28 [error] 23#23: *31 "/app/web/addons/ltwl_paibao_dx/core/web/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /addons/ltwl_paibao_dx/core/web/ HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/addons/ltwl_paibao_dx/core/web/"
+2026/01/18 06:08:28 [error] 23#23: *30 open() "/app/web/relayApi/api/notice/site_setting" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /relayApi/api/notice/site_setting HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/relayApi/api/notice/site_setting"
+2026/01/18 06:08:28 [error] 21#21: *26 open() "/app/web/api/currency/getTradeCurrencyList" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/currency/getTradeCurrencyList HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/currency/getTradeCurrencyList"
+2026/01/18 06:08:28 [error] 23#23: *28 "/app/web/api/public/index.html" is not found (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/public/?service=Home.getConfig HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/public/%3Fservice%3DHome.getConfig"
+2026/01/18 06:08:28 [error] 23#23: *27 open() "/app/web/index/police/index.html" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /index/police/index.html?agent=1000 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/index/police/index.html%3Fagent%3D1000"
+2026/01/18 06:08:28 [error] 23#23: *29 open() "/app/web/service/business/api/customer/list" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /service/business/api/customer/list HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/service/business/api/customer/list"
+2026/01/18 06:08:28 [error] 23#23: *31 open() "/app/web/api/seller/index/GetSellerConfigAll" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/seller/index/GetSellerConfigAll HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/seller/index/GetSellerConfigAll"
+2026/01/18 06:08:28 [error] 21#21: *26 open() "/app/web/qiantaizhuanyon_chaxun/chaxunkaiguan" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /qiantaizhuanyon_chaxun/chaxunkaiguan HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/qiantaizhuanyon_chaxun/chaxunkaiguan"
+2026/01/18 06:08:28 [error] 23#23: *29 open() "/app/web/api/unSecurity/app/listAppVersionInfo" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/unSecurity/app/listAppVersionInfo HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/unSecurity/app/listAppVersionInfo"
+2026/01/18 06:08:28 [error] 23#23: *30 open() "/app/web/ajax/allcoin_a/id/0" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /ajax/allcoin_a/id/0?t=0.3782499195965951 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/ajax/allcoin_a/id/0%3Ft%3D0.3782499195965951"
+2026/01/18 06:08:28 [error] 21#21: *26 open() "/app/web/wap/api/exchangerateuserconfig!get.action" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /wap/api/exchangerateuserconfig!get.action HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wap/api/exchangerateuserconfig%21get.action"
+2026/01/18 06:08:28 [error] 23#23: *28 open() "/app/web/api/api/exchangerateuserconfig!get.action" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /api/api/exchangerateuserconfig!get.action HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/api/exchangerateuserconfig%21get.action"
+2026/01/18 06:08:28 [error] 23#23: *32 open() "/app/web/api/system/systemConfigs/getCustomerServiceLink" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/system/systemConfigs/getCustomerServiceLink HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/system/systemConfigs/getCustomerServiceLink"
+2026/01/18 06:08:29 [error] 23#23: *30 open() "/app/web/client/api/findConfigByKey" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /client/api/findConfigByKey?configKey=level_config HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/client/api/findConfigByKey%3FconfigKey%3Dlevel_config"
+2026/01/18 06:08:29 [error] 23#23: *28 open() "/app/web/site/api/v1/site/vipExclusiveDomain/getGuestDomain" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /site/api/v1/site/vipExclusiveDomain/getGuestDomain HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/site/api/v1/site/vipExclusiveDomain/getGuestDomain"
+2026/01/18 06:08:29 [error] 23#23: *27 directory index of "/app/web/" is forbidden, client: 152.32.210.129, server: xxxxx.com, request: "GET / HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/"
+2026/01/18 06:08:29 [error] 23#23: *27 open() "/app/web/wap/api/syspara!getSyspara.action" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /wap/api/syspara!getSyspara.action?code=customer_service_url HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/wap/api/syspara%21getSyspara.action%3Fcode%3Dcustomer_service_url"
+2026/01/18 06:08:29 [error] 23#23: *28 open() "/app/web/leftDao.php" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /leftDao.php?callback=jQuery183016740860980352856_1604309800583 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/leftDao.php%3Fcallback%3DjQuery183016740860980352856_1604309800583"
+2026/01/18 06:08:29 [error] 23#23: *30 open() "/app/web/api/heartbeat" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "POST /api/heartbeat HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/api/heartbeat"
+2026/01/18 06:08:29 [error] 21#21: *26 open() "/app/web/getConfig/listPopFrame.do" failed (2: No such file or directory), client: 152.32.210.129, server: xxxxx.com, request: "GET /getConfig/listPopFrame.do?code=1&position=index&_=1601489645097 HTTP/1.1", host: "8.208.93.138", referrer: "http://8.208.93.138/getConfig/listPopFrame.do%3Fcode%3D1%26position%3Dindex%26_%3D1601489645097"
+2026/01/18 06:11:55 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 06:11:55 [notice] 21#21: gracefully shutting down
+2026/01/18 06:11:55 [notice] 23#23: gracefully shutting down
+2026/01/18 06:11:55 [notice] 21#21: exiting
+2026/01/18 06:11:55 [notice] 23#23: exiting
+2026/01/18 06:11:55 [notice] 22#22: gracefully shutting down
+2026/01/18 06:11:55 [notice] 22#22: exiting
+2026/01/18 06:11:55 [notice] 21#21: exit
+2026/01/18 06:11:55 [notice] 22#22: exit
+2026/01/18 06:11:55 [notice] 23#23: exit
+2026/01/18 06:11:55 [notice] 24#24: gracefully shutting down
+2026/01/18 06:11:55 [notice] 24#24: exiting
+2026/01/18 06:11:55 [notice] 24#24: exit
+2026/01/18 06:11:56 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 06:11:56 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 06:11:56 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 06:11:56 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 06:11:56 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 06:11:56 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 06:11:56 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 06:11:56 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 06:11:56 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 06:11:56 [notice] 1#1: exit
+2026/01/18 06:43:03 [notice] 1#1: using the "epoll" event method
+2026/01/18 06:43:03 [notice] 1#1: nginx/1.29.4
+2026/01/18 06:43:03 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 06:43:03 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 06:43:03 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 06:43:03 [notice] 1#1: start worker processes
+2026/01/18 06:43:03 [notice] 1#1: start worker process 21
+2026/01/18 06:43:03 [notice] 1#1: start worker process 22
+2026/01/18 06:43:03 [notice] 1#1: start worker process 23
+2026/01/18 06:43:03 [notice] 1#1: start worker process 24
+2026/01/18 06:53:48 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 06:53:48 [notice] 21#21: gracefully shutting down
+2026/01/18 06:53:48 [notice] 22#22: gracefully shutting down
+2026/01/18 06:53:48 [notice] 21#21: exiting
+2026/01/18 06:53:48 [notice] 22#22: exiting
+2026/01/18 06:53:48 [notice] 22#22: exit
+2026/01/18 06:53:48 [notice] 21#21: exit
+2026/01/18 06:53:48 [notice] 24#24: gracefully shutting down
+2026/01/18 06:53:48 [notice] 23#23: gracefully shutting down
+2026/01/18 06:53:48 [notice] 24#24: exiting
+2026/01/18 06:53:48 [notice] 23#23: exiting
+2026/01/18 06:53:48 [notice] 23#23: exit
+2026/01/18 06:53:48 [notice] 24#24: exit
+2026/01/18 06:53:48 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 06:53:48 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 06:53:48 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 06:53:48 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 06:53:48 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 06:53:48 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 06:53:48 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 06:53:48 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 06:53:48 [notice] 1#1: exit
+2026/01/18 06:53:49 [notice] 1#1: using the "epoll" event method
+2026/01/18 06:53:49 [notice] 1#1: nginx/1.29.4
+2026/01/18 06:53:49 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 06:53:49 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 06:53:49 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 06:53:49 [notice] 1#1: start worker processes
+2026/01/18 06:53:49 [notice] 1#1: start worker process 21
+2026/01/18 06:53:49 [notice] 1#1: start worker process 22
+2026/01/18 06:53:49 [notice] 1#1: start worker process 23
+2026/01/18 06:53:49 [notice] 1#1: start worker process 24
+2026/01/18 07:05:47 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:05:47 [notice] 21#21: gracefully shutting down
+2026/01/18 07:05:47 [notice] 21#21: exiting
+2026/01/18 07:05:47 [notice] 22#22: gracefully shutting down
+2026/01/18 07:05:47 [notice] 21#21: exit
+2026/01/18 07:05:47 [notice] 22#22: exiting
+2026/01/18 07:05:47 [notice] 22#22: exit
+2026/01/18 07:05:47 [notice] 23#23: gracefully shutting down
+2026/01/18 07:05:47 [notice] 23#23: exiting
+2026/01/18 07:05:47 [notice] 23#23: exit
+2026/01/18 07:05:47 [notice] 24#24: gracefully shutting down
+2026/01/18 07:05:47 [notice] 24#24: exiting
+2026/01/18 07:05:47 [notice] 24#24: exit
+2026/01/18 07:05:47 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 07:05:47 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 07:05:47 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:05:47 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:05:47 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:05:47 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:05:47 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 07:05:47 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 07:05:47 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:05:47 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 07:05:47 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:05:47 [notice] 1#1: exit
+2026/01/18 07:07:00 [notice] 1#1: using the "epoll" event method
+2026/01/18 07:07:00 [notice] 1#1: nginx/1.29.4
+2026/01/18 07:07:00 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 07:07:00 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 07:07:00 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 07:07:00 [notice] 1#1: start worker processes
+2026/01/18 07:07:00 [notice] 1#1: start worker process 21
+2026/01/18 07:07:00 [notice] 1#1: start worker process 22
+2026/01/18 07:07:00 [notice] 1#1: start worker process 23
+2026/01/18 07:07:00 [notice] 1#1: start worker process 24
+2026/01/18 07:10:40 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:10:40 [notice] 22#22: gracefully shutting down
+2026/01/18 07:10:40 [notice] 23#23: gracefully shutting down
+2026/01/18 07:10:40 [notice] 22#22: exiting
+2026/01/18 07:10:40 [notice] 23#23: exiting
+2026/01/18 07:10:40 [notice] 22#22: exit
+2026/01/18 07:10:40 [notice] 23#23: exit
+2026/01/18 07:10:40 [notice] 21#21: gracefully shutting down
+2026/01/18 07:10:40 [notice] 21#21: exiting
+2026/01/18 07:10:40 [notice] 24#24: gracefully shutting down
+2026/01/18 07:10:40 [notice] 24#24: exiting
+2026/01/18 07:10:40 [notice] 21#21: exit
+2026/01/18 07:10:40 [notice] 24#24: exit
+2026/01/18 07:10:40 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:10:40 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:10:40 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 07:10:40 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:10:40 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 07:10:40 [notice] 1#1: exit
+2026/01/18 07:10:41 [emerg] 1#1: host not found in upstream "server:8000" in /etc/nginx/conf.d/default.conf:2
+2026/01/18 07:10:41 [notice] 1#1: using the "epoll" event method
+2026/01/18 07:10:41 [notice] 1#1: nginx/1.29.4
+2026/01/18 07:10:41 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 07:10:41 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 07:10:41 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 07:10:41 [notice] 1#1: start worker processes
+2026/01/18 07:10:41 [notice] 1#1: start worker process 20
+2026/01/18 07:10:41 [notice] 1#1: start worker process 21
+2026/01/18 07:10:41 [notice] 1#1: start worker process 22
+2026/01/18 07:10:41 [notice] 1#1: start worker process 23
+2026/01/18 07:11:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:11:22 [notice] 20#20: gracefully shutting down
+2026/01/18 07:11:22 [notice] 22#22: gracefully shutting down
+2026/01/18 07:11:22 [notice] 21#21: gracefully shutting down
+2026/01/18 07:11:22 [notice] 21#21: exiting
+2026/01/18 07:11:22 [notice] 23#23: gracefully shutting down
+2026/01/18 07:11:22 [notice] 23#23: exiting
+2026/01/18 07:11:22 [notice] 20#20: exiting
+2026/01/18 07:11:22 [notice] 21#21: exit
+2026/01/18 07:11:22 [notice] 20#20: exit
+2026/01/18 07:11:22 [notice] 23#23: exit
+2026/01/18 07:11:22 [notice] 1#1: signal 17 (SIGCHLD) received from 20
+2026/01/18 07:11:22 [notice] 1#1: worker process 20 exited with code 0
+2026/01/18 07:11:22 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:11:22 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:11:22 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:11:22 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:12:30 [notice] 1#1: using the "epoll" event method
+2026/01/18 07:12:30 [notice] 1#1: nginx/1.29.4
+2026/01/18 07:12:30 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 07:12:30 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 07:12:30 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 07:12:30 [notice] 1#1: start worker processes
+2026/01/18 07:12:30 [notice] 1#1: start worker process 21
+2026/01/18 07:12:30 [notice] 1#1: start worker process 22
+2026/01/18 07:12:30 [notice] 1#1: start worker process 23
+2026/01/18 07:12:30 [notice] 1#1: start worker process 24
+2026/01/18 07:26:25 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:26:25 [notice] 21#21: gracefully shutting down
+2026/01/18 07:26:25 [notice] 22#22: gracefully shutting down
+2026/01/18 07:26:25 [notice] 23#23: gracefully shutting down
+2026/01/18 07:26:25 [notice] 21#21: exiting
+2026/01/18 07:26:25 [notice] 22#22: exiting
+2026/01/18 07:26:25 [notice] 23#23: exiting
+2026/01/18 07:26:25 [notice] 21#21: exit
+2026/01/18 07:26:25 [notice] 23#23: exit
+2026/01/18 07:26:25 [notice] 22#22: exit
+2026/01/18 07:26:25 [notice] 24#24: gracefully shutting down
+2026/01/18 07:26:25 [notice] 24#24: exiting
+2026/01/18 07:26:25 [notice] 24#24: exit
+2026/01/18 07:26:25 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:26:25 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:26:25 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:26:25 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 07:26:25 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:26:25 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:26:25 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 07:26:25 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 07:26:25 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 07:26:25 [notice] 1#1: exit
+2026/01/18 07:27:48 [notice] 1#1: using the "epoll" event method
+2026/01/18 07:27:48 [notice] 1#1: nginx/1.29.4
+2026/01/18 07:27:48 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 07:27:48 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 07:27:48 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 07:27:48 [notice] 1#1: start worker processes
+2026/01/18 07:27:48 [notice] 1#1: start worker process 21
+2026/01/18 07:27:48 [notice] 1#1: start worker process 22
+2026/01/18 07:27:48 [notice] 1#1: start worker process 23
+2026/01/18 07:27:48 [notice] 1#1: start worker process 24
+2026/01/18 07:29:15 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:29:15 [notice] 22#22: gracefully shutting down
+2026/01/18 07:29:15 [notice] 21#21: gracefully shutting down
+2026/01/18 07:29:15 [notice] 24#24: gracefully shutting down
+2026/01/18 07:29:15 [notice] 22#22: exiting
+2026/01/18 07:29:15 [notice] 24#24: exiting
+2026/01/18 07:29:15 [notice] 21#21: exiting
+2026/01/18 07:29:15 [notice] 22#22: exit
+2026/01/18 07:29:15 [notice] 24#24: exit
+2026/01/18 07:29:15 [notice] 21#21: exit
+2026/01/18 07:29:15 [notice] 23#23: gracefully shutting down
+2026/01/18 07:29:15 [notice] 23#23: exiting
+2026/01/18 07:29:15 [notice] 23#23: exit
+2026/01/18 07:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 07:29:15 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 07:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 07:29:15 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 07:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:29:15 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:29:15 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:29:15 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 07:29:15 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:29:15 [notice] 1#1: exit
+2026/01/18 07:43:36 [notice] 1#1: using the "epoll" event method
+2026/01/18 07:43:36 [notice] 1#1: nginx/1.29.4
+2026/01/18 07:43:36 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 07:43:36 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 07:43:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 07:43:36 [notice] 1#1: start worker processes
+2026/01/18 07:43:36 [notice] 1#1: start worker process 21
+2026/01/18 07:43:36 [notice] 1#1: start worker process 22
+2026/01/18 07:43:36 [notice] 1#1: start worker process 23
+2026/01/18 07:43:36 [notice] 1#1: start worker process 24
+2026/01/18 07:44:10 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:44:10 [notice] 21#21: gracefully shutting down
+2026/01/18 07:44:10 [notice] 22#22: gracefully shutting down
+2026/01/18 07:44:10 [notice] 23#23: gracefully shutting down
+2026/01/18 07:44:10 [notice] 22#22: exiting
+2026/01/18 07:44:10 [notice] 21#21: exiting
+2026/01/18 07:44:10 [notice] 23#23: exiting
+2026/01/18 07:44:10 [notice] 22#22: exit
+2026/01/18 07:44:10 [notice] 21#21: exit
+2026/01/18 07:44:10 [notice] 23#23: exit
+2026/01/18 07:44:10 [notice] 24#24: gracefully shutting down
+2026/01/18 07:44:10 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 07:44:10 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:44:10 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:44:10 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 07:44:10 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 07:44:10 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:44:10 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:44:10 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:44:10 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:55:18 [notice] 1#1: using the "epoll" event method
+2026/01/18 07:55:18 [notice] 1#1: nginx/1.29.4
+2026/01/18 07:55:18 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 07:55:18 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 07:55:18 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 07:55:18 [notice] 1#1: start worker processes
+2026/01/18 07:55:18 [notice] 1#1: start worker process 21
+2026/01/18 07:55:18 [notice] 1#1: start worker process 22
+2026/01/18 07:55:18 [notice] 1#1: start worker process 23
+2026/01/18 07:55:18 [notice] 1#1: start worker process 24
+2026/01/18 07:59:12 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 07:59:12 [notice] 21#21: gracefully shutting down
+2026/01/18 07:59:12 [notice] 23#23: gracefully shutting down
+2026/01/18 07:59:12 [notice] 22#22: gracefully shutting down
+2026/01/18 07:59:12 [notice] 21#21: exiting
+2026/01/18 07:59:12 [notice] 23#23: exiting
+2026/01/18 07:59:12 [notice] 22#22: exiting
+2026/01/18 07:59:12 [notice] 22#22: exit
+2026/01/18 07:59:12 [notice] 21#21: exit
+2026/01/18 07:59:12 [notice] 23#23: exit
+2026/01/18 07:59:12 [notice] 24#24: gracefully shutting down
+2026/01/18 07:59:12 [notice] 24#24: exiting
+2026/01/18 07:59:12 [notice] 24#24: exit
+2026/01/18 07:59:12 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 07:59:12 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 07:59:12 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:59:12 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 07:59:12 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 07:59:12 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 07:59:12 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 07:59:12 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 07:59:12 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 07:59:12 [notice] 1#1: exit
+2026/01/18 08:00:33 [notice] 1#1: using the "epoll" event method
+2026/01/18 08:00:33 [notice] 1#1: nginx/1.29.4
+2026/01/18 08:00:33 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 08:00:33 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 08:00:33 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 08:00:33 [notice] 1#1: start worker processes
+2026/01/18 08:00:33 [notice] 1#1: start worker process 21
+2026/01/18 08:00:33 [notice] 1#1: start worker process 22
+2026/01/18 08:00:33 [notice] 1#1: start worker process 23
+2026/01/18 08:00:33 [notice] 1#1: start worker process 24
+2026/01/18 13:33:44 [error] 23#23: *217 upstream prematurely closed connection while reading response header from upstream, client: 39.103.164.193, server: 8.208.93.138, request: "GET / HTTP/1.1", upstream: "http://172.18.0.4:3000/", host: "8.208.93.138"
+2026/01/18 14:53:58 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 14:53:58 [notice] 21#21: gracefully shutting down
+2026/01/18 14:53:58 [notice] 22#22: gracefully shutting down
+2026/01/18 14:53:58 [notice] 24#24: gracefully shutting down
+2026/01/18 14:53:58 [notice] 21#21: exiting
+2026/01/18 14:53:58 [notice] 22#22: exiting
+2026/01/18 14:53:58 [notice] 24#24: exiting
+2026/01/18 14:53:58 [notice] 22#22: exit
+2026/01/18 14:53:58 [notice] 21#21: exit
+2026/01/18 14:53:58 [notice] 24#24: exit
+2026/01/18 14:53:58 [notice] 23#23: gracefully shutting down
+2026/01/18 14:53:58 [notice] 23#23: exiting
+2026/01/18 14:53:58 [notice] 23#23: exit
+2026/01/18 14:53:58 [notice] 1#1: signal 17 (SIGCHLD) received from 23
+2026/01/18 14:53:58 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 14:53:58 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 14:53:58 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 14:53:58 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 14:53:58 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 14:53:58 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 14:53:58 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 14:53:58 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 14:53:58 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 14:53:58 [notice] 1#1: exit
+2026/01/18 15:23:17 [notice] 1#1: using the "epoll" event method
+2026/01/18 15:23:17 [notice] 1#1: nginx/1.29.4
+2026/01/18 15:23:17 [notice] 1#1: built by gcc 14.2.0 (Debian 14.2.0-19) 
+2026/01/18 15:23:17 [notice] 1#1: OS: Linux 6.8.0-88-generic
+2026/01/18 15:23:17 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2026/01/18 15:23:17 [notice] 1#1: start worker processes
+2026/01/18 15:23:17 [notice] 1#1: start worker process 21
+2026/01/18 15:23:17 [notice] 1#1: start worker process 22
+2026/01/18 15:23:17 [notice] 1#1: start worker process 23
+2026/01/18 15:23:17 [notice] 1#1: start worker process 24
+2026/01/18 15:23:39 [error] 21#21: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 125.85.69.237, server: 8.208.93.138,, request: "GET / HTTP/1.1", upstream: "http://127.0.0.1:3000/", host: "8.208.93.138"
+2026/01/18 15:23:46 [error] 21#21: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 125.85.69.237, server: 8.208.93.138,, request: "GET /admin/products HTTP/1.1", upstream: "http://127.0.0.1:3000/admin/products", host: "8.208.93.138"
+2026/01/18 15:26:22 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2026/01/18 15:26:22 [notice] 21#21: gracefully shutting down
+2026/01/18 15:26:22 [notice] 22#22: gracefully shutting down
+2026/01/18 15:26:22 [notice] 23#23: gracefully shutting down
+2026/01/18 15:26:22 [notice] 21#21: exiting
+2026/01/18 15:26:22 [notice] 23#23: exiting
+2026/01/18 15:26:22 [notice] 22#22: exiting
+2026/01/18 15:26:22 [notice] 21#21: exit
+2026/01/18 15:26:22 [notice] 23#23: exit
+2026/01/18 15:26:22 [notice] 22#22: exit
+2026/01/18 15:26:22 [notice] 24#24: gracefully shutting down
+2026/01/18 15:26:22 [notice] 24#24: exiting
+2026/01/18 15:26:22 [notice] 24#24: exit
+2026/01/18 15:26:22 [notice] 1#1: signal 17 (SIGCHLD) received from 21
+2026/01/18 15:26:22 [notice] 1#1: worker process 21 exited with code 0
+2026/01/18 15:26:22 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 15:26:22 [notice] 1#1: signal 17 (SIGCHLD) received from 24
+2026/01/18 15:26:22 [notice] 1#1: worker process 24 exited with code 0
+2026/01/18 15:26:22 [notice] 1#1: signal 29 (SIGIO) received
+2026/01/18 15:26:22 [notice] 1#1: signal 17 (SIGCHLD) received from 22
+2026/01/18 15:26:22 [notice] 1#1: worker process 22 exited with code 0
+2026/01/18 15:26:22 [notice] 1#1: worker process 23 exited with code 0
+2026/01/18 15:26:22 [notice] 1#1: exit

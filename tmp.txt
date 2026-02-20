@@ -1,0 +1,623 @@
+.
+├── README.md
+├── server
+│   ├── info.log
+│   ├── manage.py
+│   ├── myapp
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── auth
+│   │   │   ├── authentication.py
+│   │   │   ├── __init__.py
+│   │   │   ├── MyRateThrottle.py
+│   │   │   └── __pycache__
+│   │   │       ├── authentication.cpython-38.pyc
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       └── MyRateThrottle.cpython-38.pyc
+│   │   ├── handler.py
+│   │   ├── __init__.py
+│   │   ├── middlewares
+│   │   │   ├── __init__.py
+│   │   │   ├── LogMiddleware.py
+│   │   │   └── __pycache__
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       └── LogMiddleware.cpython-38.pyc
+│   │   ├── migrations
+│   │   │   ├── 0001_initial.py
+│   │   │   ├── 0002_category_sort.py
+│   │   │   ├── 0003_user_exp.py
+│   │   │   ├── 0004_alter_category_pid.py
+│   │   │   ├── 0005_auto_20250314_1613.py
+│   │   │   ├── 0006_thing_summary.py
+│   │   │   ├── 0007_auto_20250315_1451.py
+│   │   │   ├── 0008_thing_properties.py
+│   │   │   ├── 0009_alter_thing_properties.py
+│   │   │   ├── 0010_alter_thing_category.py
+│   │   │   ├── 0011_news.py
+│   │   │   ├── 0012_case.py
+│   │   │   ├── 0013_faq.py
+│   │   │   ├── 0014_inquiry.py
+│   │   │   ├── 0015_download.py
+│   │   │   ├── 0016_download_link.py
+│   │   │   ├── 0017_basicsite.py
+│   │   │   ├── 0018_alter_basicsite_id.py
+│   │   │   ├── 0019_alter_basicsite_id.py
+│   │   │   ├── 0020_basictdk.py
+│   │   │   ├── 0021_basicbanner.py
+│   │   │   ├── 0022_basicglobal.py
+│   │   │   ├── 0023_basicglobal_global_wechat_qrcode.py
+│   │   │   ├── 0024_basicadditional.py
+│   │   │   ├── 0025_comment.py
+│   │   │   ├── 0026_inquiry_ip.py
+│   │   │   ├── 0027_about.py
+│   │   │   ├── 0028_oplog_re_time.py
+│   │   │   ├── 0029_auto_20250327_1504.py
+│   │   │   ├── 0030_auto_20250327_1512.py
+│   │   │   ├── 0031_alter_basicsite_status.py
+│   │   │   ├── 0032_case_client.py
+│   │   │   ├── 0033_auto_20250419_1456.py
+│   │   │   ├── 0034_advantage.py
+│   │   │   ├── 0035_basicadditional_global_addition_contact_image.py
+│   │   │   ├── 0036_comment_comment_cover.py
+│   │   │   ├── 0037_thing_dimension.py
+│   │   │   ├── 0038_basicsite_site_gaid.py
+│   │   │   ├── 0039_alter_basicadditional_global_addition_company_image.py
+│   │   │   ├── 0040_auto_20250430_0957.py
+│   │   │   ├── 0041_auto_20250606_1449.py
+│   │   │   ├── 0042_alter_basicadditional_ext02.py
+│   │   │   ├── __init__.py
+│   │   │   └── __pycache__
+│   │   │       ├── 0001_initial.cpython-38.pyc
+│   │   │       ├── 0002_category_sort.cpython-38.pyc
+│   │   │       ├── 0003_user_exp.cpython-38.pyc
+│   │   │       ├── 0004_alter_category_pid.cpython-38.pyc
+│   │   │       ├── 0005_auto_20250314_1613.cpython-38.pyc
+│   │   │       ├── 0006_thing_summary.cpython-38.pyc
+│   │   │       ├── 0007_auto_20250315_1451.cpython-38.pyc
+│   │   │       ├── 0008_thing_properties.cpython-38.pyc
+│   │   │       ├── 0009_alter_thing_properties.cpython-38.pyc
+│   │   │       ├── 0010_alter_thing_category.cpython-38.pyc
+│   │   │       ├── 0011_news.cpython-38.pyc
+│   │   │       ├── 0012_case.cpython-38.pyc
+│   │   │       ├── 0013_faq.cpython-38.pyc
+│   │   │       ├── 0014_inquiry.cpython-38.pyc
+│   │   │       ├── 0015_download.cpython-38.pyc
+│   │   │       ├── 0016_download_link.cpython-38.pyc
+│   │   │       ├── 0017_basicsite.cpython-38.pyc
+│   │   │       ├── 0018_alter_basicsite_id.cpython-38.pyc
+│   │   │       ├── 0019_alter_basicsite_id.cpython-38.pyc
+│   │   │       ├── 0020_basictdk.cpython-38.pyc
+│   │   │       ├── 0021_basicbanner.cpython-38.pyc
+│   │   │       ├── 0022_basicglobal.cpython-38.pyc
+│   │   │       ├── 0023_basicglobal_global_wechat_qrcode.cpython-38.pyc
+│   │   │       ├── 0024_basicadditional.cpython-38.pyc
+│   │   │       ├── 0025_comment.cpython-38.pyc
+│   │   │       ├── 0026_inquiry_ip.cpython-38.pyc
+│   │   │       ├── 0027_about.cpython-38.pyc
+│   │   │       ├── 0028_oplog_re_time.cpython-38.pyc
+│   │   │       ├── 0029_auto_20250327_1504.cpython-38.pyc
+│   │   │       ├── 0030_auto_20250327_1512.cpython-38.pyc
+│   │   │       ├── 0031_alter_basicsite_status.cpython-38.pyc
+│   │   │       ├── 0032_case_client.cpython-38.pyc
+│   │   │       ├── 0033_auto_20250419_1456.cpython-38.pyc
+│   │   │       ├── 0034_advantage.cpython-38.pyc
+│   │   │       ├── 0035_basicadditional_global_addition_contact_image.cpython-38.pyc
+│   │   │       ├── 0036_comment_comment_cover.cpython-38.pyc
+│   │   │       ├── 0037_thing_dimension.cpython-38.pyc
+│   │   │       ├── 0038_basicsite_site_gaid.cpython-38.pyc
+│   │   │       ├── 0039_alter_basicadditional_global_addition_company_image.cpython-38.pyc
+│   │   │       ├── 0040_auto_20250430_0957.cpython-38.pyc
+│   │   │       ├── 0041_auto_20250606_1449.cpython-38.pyc
+│   │   │       ├── 0042_alter_basicadditional_ext02.cpython-38.pyc
+│   │   │       └── __init__.cpython-38.pyc
+│   │   ├── models.py
+│   │   ├── permission
+│   │   │   ├── __init__.py
+│   │   │   ├── permission.py
+│   │   │   └── __pycache__
+│   │   │       ├── __init__.cpython-38.pyc
+│   │   │       └── permission.cpython-38.pyc
+│   │   ├── __pycache__
+│   │   │   ├── admin.cpython-38.pyc
+│   │   │   ├── apps.cpython-38.pyc
+│   │   │   ├── handler.cpython-38.pyc
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   ├── models.cpython-38.pyc
+│   │   │   ├── serializers.cpython-38.pyc
+│   │   │   ├── urls.cpython-38.pyc
+│   │   │   └── utils.cpython-38.pyc
+│   │   ├── serializers.py
+│   │   ├── urls.py
+│   │   ├── utils.py
+│   │   └── views
+│   │       ├── admin
+│   │       │   ├── about.py
+│   │       │   ├── advantage.py
+│   │       │   ├── basicAdditional.py
+│   │       │   ├── basicBanner.py
+│   │       │   ├── basicGlobal.py
+│   │       │   ├── basicSite.py
+│   │       │   ├── basicTdk.py
+│   │       │   ├── case.py
+│   │       │   ├── category.py
+│   │       │   ├── cdn.py
+│   │       │   ├── comment.py
+│   │       │   ├── download.py
+│   │       │   ├── errorLog.py
+│   │       │   ├── faq.py
+│   │       │   ├── __init__.py
+│   │       │   ├── inquiry.py
+│   │       │   ├── news.py
+│   │       │   ├── opLog.py
+│   │       │   ├── overview.py
+│   │       │   ├── __pycache__
+│   │       │   │   ├── about.cpython-38.pyc
+│   │       │   │   ├── advantage.cpython-38.pyc
+│   │       │   │   ├── basicAdditional.cpython-38.pyc
+│   │       │   │   ├── basicBanner.cpython-38.pyc
+│   │       │   │   ├── basicGlobal.cpython-38.pyc
+│   │       │   │   ├── basicSite.cpython-38.pyc
+│   │       │   │   ├── basicTdk.cpython-38.pyc
+│   │       │   │   ├── case.cpython-38.pyc
+│   │       │   │   ├── category.cpython-38.pyc
+│   │       │   │   ├── cdn.cpython-38.pyc
+│   │       │   │   ├── comment.cpython-38.pyc
+│   │       │   │   ├── download.cpython-38.pyc
+│   │       │   │   ├── errorLog.cpython-38.pyc
+│   │       │   │   ├── faq.cpython-38.pyc
+│   │       │   │   ├── __init__.cpython-38.pyc
+│   │       │   │   ├── inquiry.cpython-38.pyc
+│   │       │   │   ├── news.cpython-38.pyc
+│   │       │   │   ├── opLog.cpython-38.pyc
+│   │       │   │   ├── overview.cpython-38.pyc
+│   │       │   │   ├── thing.cpython-38.pyc
+│   │       │   │   └── user.cpython-38.pyc
+│   │       │   ├── thing.py
+│   │       │   └── user.py
+│   │       ├── index
+│   │       │   ├── about.py
+│   │       │   ├── case.py
+│   │       │   ├── common.py
+│   │       │   ├── contact.py
+│   │       │   ├── download.py
+│   │       │   ├── faq.py
+│   │       │   ├── home.py
+│   │       │   ├── __init__.py
+│   │       │   ├── inquiry.py
+│   │       │   ├── news.py
+│   │       │   ├── __pycache__
+│   │       │   │   ├── about.cpython-38.pyc
+│   │       │   │   ├── case.cpython-38.pyc
+│   │       │   │   ├── common.cpython-38.pyc
+│   │       │   │   ├── contact.cpython-38.pyc
+│   │       │   │   ├── download.cpython-38.pyc
+│   │       │   │   ├── faq.cpython-38.pyc
+│   │       │   │   ├── home.cpython-38.pyc
+│   │       │   │   ├── __init__.cpython-38.pyc
+│   │       │   │   ├── inquiry.cpython-38.pyc
+│   │       │   │   ├── news.cpython-38.pyc
+│   │       │   │   ├── sitemap.cpython-38.pyc
+│   │       │   │   └── thing.cpython-38.pyc
+│   │       │   ├── sitemap.py
+│   │       │   └── thing.py
+│   │       ├── __init__.py
+│   │       └── __pycache__
+│   │           └── __init__.cpython-38.pyc
+│   ├── readme.md
+│   ├── requirements.txt
+│   ├── server
+│   │   ├── asgi.py
+│   │   ├── __init__.py
+│   │   ├── __pycache__
+│   │   │   ├── __init__.cpython-38.pyc
+│   │   │   ├── settings.cpython-38.pyc
+│   │   │   ├── urls.cpython-38.pyc
+│   │   │   └── wsgi.cpython-38.pyc
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
+│   ├── tests
+│   │   ├── testApi.py
+│   │   ├── testBrowser.py
+│   │   └── testSendEmail.py
+│   └── upload
+│       ├── file
+│       │   ├── 1742612935260.jpg
+│       │   ├── 1742613094872.jpeg
+│       │   ├── 1742613137048.jpeg
+│       │   ├── 1742613238437.jpeg
+│       │   ├── 1744985698226.jpeg
+│       │   ├── 1745029106706.pdf
+│       │   ├── 1745029908432.jpg
+│       │   ├── 1745029920436.png
+│       │   ├── 1745483187020.docx
+│       │   ├── 1745483200558.docx
+│       │   ├── 1745483212567.png
+│       │   ├── 1745483220862.docx
+│       │   ├── 1745742825930.jpg
+│       │   ├── 1745742952407.mp4
+│       │   └── 1745983763089.jpeg
+│       └── img
+│           ├── 1741940842969.jpg
+│           ├── 1742109197188.jpg
+│           ├── 1742109216317.jpg
+│           ├── 1742181451345.png
+│           ├── 1742278096595.png
+│           ├── 1742363886089.png
+│           ├── 1742365096081.png
+│           ├── 1742806933758.ico
+│           ├── 1742872289776.png
+│           ├── 1742872304257.jpeg
+│           ├── 1742884066580.png
+│           ├── 1743579693076.jpg
+│           ├── 1743914296159.jpg
+│           ├── 1744635511413.png
+│           ├── 1744962202961.jpg
+│           ├── 1744975187228.jpg
+│           ├── 1745030578651.jpg
+│           ├── 1745049301356.jpg
+│           ├── 1745049673531.jpg
+│           ├── 1745052895155.png
+│           ├── 1745052900938.png
+│           ├── 1745052907469.png
+│           ├── 1745052913253.png
+│           ├── 1745052919204.png
+│           ├── 1745052926986.png
+│           ├── 1745053949716.png
+│           ├── 1745134736516.jpeg
+│           ├── 1745140193323.png
+│           ├── 1745220333212.jpg
+│           ├── 1745289976827.png
+│           ├── 1745290367491.jpg
+│           ├── 1745290373456.jpg
+│           ├── 1745290377932.jpg
+│           ├── 1745291972059.png
+│           ├── 1745460011834.jpg
+│           ├── 1745460019136.jpg
+│           ├── 1745460949926.jpg
+│           ├── 1745462380944.jpg
+│           ├── 1745462388292.jpg
+│           ├── 1745462395579.jpg
+│           ├── 1745462405276.jpg
+│           ├── 1745462412737.jpg
+│           ├── 1745462420569.jpg
+│           ├── 1745462428866.jpg
+│           ├── 1745462437068.jpg
+│           ├── 1745462445631.jpg
+│           ├── 1745462454287.jpg
+│           ├── 1745462491685.jpg
+│           ├── 1745462508547.jpg
+│           ├── 1745462520685.jpg
+│           ├── 1745462532757.jpg
+│           ├── 1745462544431.jpg
+│           ├── 1745479429781.jpg
+│           ├── 1745484429803.jpg
+│           ├── 1745484441067.jpg
+│           ├── 1745484455452.jpg
+│           ├── 1745484475440.jpg
+│           ├── 1745484486390.jpg
+│           ├── 1745484496336.jpg
+│           ├── 1745484510188.jpg
+│           ├── 1745548221305.jpg
+│           ├── 1745720520536.jpg
+│           ├── 1745720989126.png
+│           ├── 1745721318191.png
+│           ├── 1745891764973.jpg
+│           ├── 1745978568987.jpg
+│           ├── 1746172484444.jpg
+│           ├── 1746172713283.jpg
+│           ├── 1746598578851.jpg
+│           ├── 1747118675095.jpg
+│           ├── 1747118686146.jpg
+│           ├── 1747118695771.jpg
+│           ├── 1747118704917.jpg
+│           ├── 1747118718622.jpg
+│           ├── 1747118729539.jpg
+│           ├── 1747118738275.jpg
+│           ├── 1747118748287.jpg
+│           ├── 1747118774080.jpg
+│           ├── 1747118959809.jpg
+│           ├── 1747119220756.jpg
+│           ├── 1747119224816.jpg
+│           ├── 1747119228932.jpg
+│           ├── 1747119237581.jpg
+│           ├── 1747121224330.jpg
+│           ├── 1747121418430.jpg
+│           ├── 1747121429625.jpg
+│           ├── 1747121438435.jpg
+│           ├── 1747121446862.jpg
+│           ├── 1747121455751.jpg
+│           ├── 1747121477242.jpg
+│           ├── 1747121502707.jpg
+│           ├── 1747121511009.jpg
+│           ├── 1747121540214.jpg
+│           ├── 1747121556368.jpg
+│           ├── 1747121567269.jpg
+│           ├── 1747121583725.jpg
+│           ├── 1747121607770.jpg
+│           ├── 1747121617112.jpg
+│           ├── 1747127398455.jpg
+│           ├── 1747127404721.jpg
+│           ├── 1747127411294.jpg
+│           ├── 1747315029749.png
+│           ├── 1747379274802.png
+│           ├── 1747382537173.ico
+│           ├── 1747382551568.png
+│           ├── 1747478225279.jpg
+│           ├── 1747478238408.jpg
+│           ├── 1747478254293.jpg
+│           ├── 1747478281945.jpg
+│           ├── 1747478339542.jpg
+│           ├── 1747478349368.jpg
+│           ├── 1747478386684.jpg
+│           ├── 1747536394139.jpg
+│           ├── 1747899216089.jpg
+│           ├── 1748225660042.jpeg
+│           ├── 1748226242704.jpeg
+│           ├── 1748331151730.jpg
+│           ├── 1748402224264.png
+│           ├── 1749280960098.jpeg
+│           ├── 1749280969287.jpeg
+│           ├── 1749280975639.jpeg
+│           ├── 1749284325689.jpg
+│           ├── 1749284333480.jpg
+│           ├── 1749284339181.jpg
+│           ├── 1749284345883.jpg
+│           ├── 1749284357587.jpeg
+│           ├── 1749285451165.jpg
+│           ├── 1749285455227.jpg
+│           ├── 1749285458687.jpg
+│           ├── 1749285462478.jpg
+│           ├── 1749285465637.jpg
+│           ├── 1749304055336.jpg
+│           ├── 1749304060084.jpg
+│           ├── 1749538547679.jpg
+│           ├── 1749538555679.jpg
+│           ├── favicon.ico
+│           └── logo.png
+├── tmp.txt
+├── web
+│   ├── components.json
+│   ├── jsconfig.json
+│   ├── my.conf
+│   ├── next.config.mjs
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.mjs
+│   ├── public
+│   │   ├── admin
+│   │   │   ├── icon_avatar.svg
+│   │   │   ├── icon_data.svg
+│   │   │   ├── icon_home.svg
+│   │   │   ├── icon_sys.svg
+│   │   │   ├── icon_visit.svg
+│   │   │   ├── ico.png
+│   │   │   ├── logo.png
+│   │   │   └── menu.png
+│   │   ├── favicon.ico
+│   │   ├── file.svg
+│   │   ├── globe.svg
+│   │   ├── next.svg
+│   │   ├── vercel.svg
+│   │   └── window.svg
+│   ├── README.md
+│   ├── src
+│   │   ├── app
+│   │   │   ├── (admin)
+│   │   │   │   ├── admin
+│   │   │   │   │   ├── about
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── basicInfo
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── case
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── download
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── faq
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── inquiry
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── layout.jsx
+│   │   │   │   │   ├── log
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── main
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── news
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   ├── page.jsx
+│   │   │   │   │   ├── products
+│   │   │   │   │   │   └── page.jsx
+│   │   │   │   │   └── user
+│   │   │   │   │       └── page.jsx
+│   │   │   │   ├── adminLogin
+│   │   │   │   │   └── page.jsx
+│   │   │   │   └── layout.jsx
+│   │   │   └── (index)
+│   │   │       ├── about
+│   │   │       │   └── page.jsx
+│   │   │       ├── case
+│   │   │       │   ├── [id]
+│   │   │       │   │   └── page.jsx
+│   │   │       │   └── [[...slug]]
+│   │   │       │       └── page.jsx
+│   │   │       ├── contact
+│   │   │       │   └── page.jsx
+│   │   │       ├── download
+│   │   │       │   └── page.jsx
+│   │   │       ├── faq
+│   │   │       │   └── page.jsx
+│   │   │       ├── layout.js
+│   │   │       ├── news
+│   │   │       │   ├── [id]
+│   │   │       │   │   └── page.jsx
+│   │   │       │   └── [[...slug]]
+│   │   │       │       └── page.jsx
+│   │   │       ├── page.js
+│   │   │       ├── product
+│   │   │       │   ├── [id]
+│   │   │       │   │   └── page.jsx
+│   │   │       │   └── [[...slug]]
+│   │   │       │       └── page.jsx
+│   │   │       └── test
+│   │   │           └── page.jsx
+│   │   ├── components
+│   │   │   ├── admin
+│   │   │   │   ├── about
+│   │   │   │   │   └── aboutSettings.jsx
+│   │   │   │   ├── basicInfo
+│   │   │   │   │   ├── additionalSettings.jsx
+│   │   │   │   │   ├── advantageModal.jsx
+│   │   │   │   │   ├── advantageSettings.jsx
+│   │   │   │   │   ├── bannerSettings.jsx
+│   │   │   │   │   ├── commentModal.jsx
+│   │   │   │   │   ├── commentSettings.jsx
+│   │   │   │   │   ├── globalSettings.jsx
+│   │   │   │   │   ├── siteSettings.jsx
+│   │   │   │   │   └── tdkSettings.jsx
+│   │   │   │   ├── case
+│   │   │   │   │   ├── caseList.jsx
+│   │   │   │   │   └── caseModal.jsx
+│   │   │   │   ├── category
+│   │   │   │   │   ├── categoryList.jsx
+│   │   │   │   │   └── categoryModal.jsx
+│   │   │   │   ├── download
+│   │   │   │   │   ├── downloadList.jsx
+│   │   │   │   │   └── downloadModal.jsx
+│   │   │   │   ├── faq
+│   │   │   │   │   ├── faqList.jsx
+│   │   │   │   │   └── faqModal.jsx
+│   │   │   │   ├── fileUpload.jsx
+│   │   │   │   ├── formLabel.jsx
+│   │   │   │   ├── header.jsx
+│   │   │   │   ├── headLabel.jsx
+│   │   │   │   ├── icoUpload.jsx
+│   │   │   │   ├── imageUpload.jsx
+│   │   │   │   ├── inquiry
+│   │   │   │   │   └── inquiryList.jsx
+│   │   │   │   ├── labelPanel.jsx
+│   │   │   │   ├── log
+│   │   │   │   │   └── opLogList.jsx
+│   │   │   │   ├── login
+│   │   │   │   │   └── loginPage.jsx
+│   │   │   │   ├── logoUpload.jsx
+│   │   │   │   ├── main
+│   │   │   │   │   ├── overViewInfo.jsx
+│   │   │   │   │   ├── sysInfo.jsx
+│   │   │   │   │   └── visitInfo.jsx
+│   │   │   │   ├── news
+│   │   │   │   │   ├── newsList.jsx
+│   │   │   │   │   └── newsModal.jsx
+│   │   │   │   ├── product
+│   │   │   │   │   ├── productList.jsx
+│   │   │   │   │   ├── productModal.jsx
+│   │   │   │   │   └── propertyPanel.jsx
+│   │   │   │   ├── sidebar.jsx
+│   │   │   │   ├── user
+│   │   │   │   │   ├── passwordModal.jsx
+│   │   │   │   │   ├── userList.jsx
+│   │   │   │   │   └── userModal.jsx
+│   │   │   │   └── wangEditor.jsx
+│   │   │   ├── index
+│   │   │   │   └── sections
+│   │   │   │       ├── aboutUs.jsx
+│   │   │   │       ├── advantages.jsx
+│   │   │   │       ├── bannerB.jsx
+│   │   │   │       ├── banner.jsx
+│   │   │   │       ├── caseDetail.jsx
+│   │   │   │       ├── caseList.jsx
+│   │   │   │       ├── categoryItem.jsx
+│   │   │   │       ├── companyNews.jsx
+│   │   │   │       ├── contactUs.jsx
+│   │   │   │       ├── copyrightBar.jsx
+│   │   │   │       ├── customersSay.jsx
+│   │   │   │       ├── downloadList.jsx
+│   │   │   │       ├── facilityArea.jsx
+│   │   │   │       ├── faqList.jsx
+│   │   │   │       ├── getInTouch.jsx
+│   │   │   │       ├── htmlPanel.jsx
+│   │   │   │       ├── htmlPanel.module.css
+│   │   │   │       ├── inquiryForm.jsx
+│   │   │   │       ├── newsDetail.jsx
+│   │   │   │       ├── newsList.jsx
+│   │   │   │       ├── ourFactory.jsx
+│   │   │   │       ├── ourMission.jsx
+│   │   │   │       ├── ourTeam.jsx
+│   │   │   │       ├── pagination.jsx
+│   │   │   │       ├── productCover.jsx
+│   │   │   │       ├── productDetail.jsx
+│   │   │   │       ├── productList.jsx
+│   │   │   │       ├── productTabs.jsx
+│   │   │   │       ├── recommendedForYou.jsx
+│   │   │   │       ├── scrollBar.jsx
+│   │   │   │       ├── searchBar.jsx
+│   │   │   │       ├── SearchResultBar.jsx
+│   │   │   │       ├── sendMessage.jsx
+│   │   │   │       ├── stats.jsx
+│   │   │   │       ├── switchLangB.jsx
+│   │   │   │       ├── switchLang.jsx
+│   │   │   │       ├── template10
+│   │   │   │       │   ├── aboutUs.jsx
+│   │   │   │       │   ├── carousel.jsx
+│   │   │   │       │   ├── categoryItem.jsx
+│   │   │   │       │   ├── certification.jsx
+│   │   │   │       │   ├── companyNews.jsx
+│   │   │   │       │   ├── customersSay.jsx
+│   │   │   │       │   ├── featuredProducts.jsx
+│   │   │   │       │   ├── footer.jsx
+│   │   │   │       │   ├── ftArea.jsx
+│   │   │   │       │   ├── getInTouch.jsx
+│   │   │   │       │   ├── navBarClient.jsx
+│   │   │   │       │   ├── navBar.jsx
+│   │   │   │       │   ├── ourCategories.jsx
+│   │   │   │       │   ├── productList.jsx
+│   │   │   │       │   └── whoWeAre.jsx
+│   │   │   │       ├── ThemeScript.jsx
+│   │   │   │       ├── timeLine.jsx
+│   │   │   │       ├── tipbar.jsx
+│   │   │   │       ├── wechat.jsx
+│   │   │   │       ├── whoWeAre.jsx
+│   │   │   │       └── whyChooseUs.jsx
+│   │   │   └── ui
+│   │   │       ├── alert-dialog.jsx
+│   │   │       └── button.jsx
+│   │   ├── hooks
+│   │   │   └── useInView.js
+│   │   ├── lib
+│   │   │   └── utils.ts
+│   │   ├── locales
+│   │   │   ├── en.js
+│   │   │   ├── index.js
+│   │   │   └── zh.js
+│   │   ├── redux
+│   │   │   ├── adminSettingSlice.js
+│   │   │   ├── redux-provider.js
+│   │   │   └── store.js
+│   │   ├── styles
+│   │   │   └── globals.css
+│   │   ├── templates
+│   │   │   └── 010
+│   │   │       ├── aboutTemplate.jsx
+│   │   │       ├── caseDetailTemplate.jsx
+│   │   │       ├── caseTemplate.jsx
+│   │   │       ├── contactTemplate.jsx
+│   │   │       ├── downloadTemplate.jsx
+│   │   │       ├── faqTemplate.jsx
+│   │   │       ├── homeTemplate.jsx
+│   │   │       ├── indexLayoutTemplate.jsx
+│   │   │       ├── newsDetailTemplate.jsx
+│   │   │       ├── newsTemplate.jsx
+│   │   │       ├── productDetailTemplate.jsx
+│   │   │       └── productTemplate.jsx
+│   │   ├── theme
+│   │   │   ├── theme-provider.js
+│   │   │   └── theme-toggle.js
+│   │   └── utils
+│   │       ├── axiosApi.js
+│   │       ├── axios.js
+│   │       └── tools.js
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+├── web_b2b.sql
+└── 说明.txt
+
+86 directories, 535 files

@@ -1,0 +1,746 @@
+nohup: ignoring input
+Watching for file changes with StatReloader
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 3964
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 112, in detail
+    category = Category.objects.get(pk=serializer.data['category'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+myapp.models.Category.DoesNotExist: Category matching query does not exist.
+"GET /myapp/index/thing/detail?id=46 HTTP/1.1" 500 113287
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 3964
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 3964
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 3964
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 2756
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=52&searchQuery= HTTP/1.1" 200 1442
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 112, in detail
+    category = Category.objects.get(pk=serializer.data['category'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+myapp.models.Category.DoesNotExist: Category matching query does not exist.
+"GET /myapp/index/thing/detail?id=46 HTTP/1.1" 500 113287
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 200 2886
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 2756
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 112, in detail
+    category = Category.objects.get(pk=serializer.data['category'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+myapp.models.Category.DoesNotExist: Category matching query does not exist.
+"GET /myapp/index/thing/detail?id=45 HTTP/1.1" 500 113282
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'category'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 95, in detail
+    thing = Thing.objects.get(pk=pk)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'category'.
+"GET /myapp/index/thing/detail?id=category HTTP/1.1" 500 157011
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'category'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 95, in detail
+    thing = Thing.objects.get(pk=pk)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'category'.
+"GET /myapp/index/thing/detail?id=category HTTP/1.1" 500 157011
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 2756
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 2886
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 112, in detail
+    category = Category.objects.get(pk=serializer.data['category'])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 435, in get
+    raise self.model.DoesNotExist(
+myapp.models.Category.DoesNotExist: Category matching query does not exist.
+"GET /myapp/index/thing/detail?id=48 HTTP/1.1" 500 113290
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'category'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 95, in detail
+    thing = Thing.objects.get(pk=pk)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'category'.
+"GET /myapp/index/thing/detail?id=category HTTP/1.1" 500 157011
+Internal Server Error: /myapp/index/thing/detail
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1823, in get_prep_value
+    return int(value)
+           ^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: 'category'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/core/handlers/base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/decorators/csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/views/generic/base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/rest_framework/decorators.py", line 41, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server/myapp/views/index/thing.py", line 95, in detail
+    thing = Thing.objects.get(pk=pk)
+            ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 424, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 941, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 961, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/query.py", line 968, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1393, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1412, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1347, in build_filter
+    condition = self.build_lookup(lookups, col, value)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/sql/query.py", line 1193, in build_lookup
+    lookup = lookup_class(lhs, rhs)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 25, in __init__
+    self.rhs = self.get_prep_lookup()
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/lookups.py", line 77, in get_prep_lookup
+    return self.lhs.output_field.get_prep_value(self.rhs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/web_b2b/server_venv/lib/python3.12/site-packages/django/db/models/fields/__init__.py", line 1825, in get_prep_value
+    raise e.__class__(
+ValueError: Field 'id' expected a number but got 'category'.
+"GET /myapp/index/thing/detail?id=category HTTP/1.1" 500 157011
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 200 2886
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 2756
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 200 2886
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 2756
+"GET /myapp/index/home/section HTTP/1.1" 200 3964
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/admin/basicGlobal/listInfo HTTP/1.0" 200 611
+"POST /myapp/admin/adminLogin HTTP/1.0" 200 53
+"POST /myapp/admin/adminLogin HTTP/1.0" 200 53
+"POST /myapp/admin/adminLogin HTTP/1.0" 200 53
+"POST /myapp/admin/adminLogin HTTP/1.0" 200 328
+"GET /myapp/admin/overview/count?days=7 HTTP/1.0" 200 325
+"GET /myapp/admin/overview/dataCount HTTP/1.0" 200 136
+"GET /myapp/admin/faq/list?page=1&pageSize=10 HTTP/1.0" 200 3627
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54656
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5460
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54694
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5498
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54732
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5489
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54770
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5536
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54808
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5527
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54846
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5477
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54884
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5579
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54922
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5507
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54960
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5471
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 54998
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"POST /myapp/admin/thing/update HTTP/1.0" 200 5991
+"GET /myapp/admin/thing/list?page=1&pageSize=10&keyword= HTTP/1.0" 200 55036
+"GET /myapp/admin/category/list HTTP/1.0" 200 463
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/detail?id=52 HTTP/1.1" 200 6232
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=50&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=51&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/detail?id=51 HTTP/1.1" 200 6270
+"GET /myapp/index/thing/detail?id=49 HTTP/1.1" 200 6308
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=51&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=50&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=51&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=50&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=52&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=53&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+Not Found: /myapp/index/thing/section
+"GET /myapp/index/thing/section?page=2&pageSize=12&categoryId=50&searchQuery= HTTP/1.1" 404 28
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/detail?id=43 HTTP/1.1" 200 6763
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/detail?id=46 HTTP/1.1" 200 6249
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/detail?id=51 HTTP/1.1" 200 6270
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/detail?id=45 HTTP/1.1" 200 6279
+"GET /myapp/index/about/section HTTP/1.1" 200 4216
+"GET /myapp/index/thing/detail?id=43 HTTP/1.1" 200 6763
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+Not Found: /myapp/index/thing/section
+"GET /myapp/index/thing/section?page=2&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 404 28
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/about/section HTTP/1.1" 200 4216
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=51&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=52&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/news/detail?id=5 HTTP/1.1" 200 29440
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/detail?id=52 HTTP/1.1" 200 6232
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/news/section?page=1&pageSize=9 HTTP/1.1" 200 2218
+"GET /myapp/index/news/section?page=1&pageSize=9 HTTP/1.1" 200 2218
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/news/detail?id=10 HTTP/1.1" 200 29416
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/news/detail?id=8 HTTP/1.1" 200 29411
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/about/section HTTP/1.1" 200 4216
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/detail?id=52 HTTP/1.1" 200 6232
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/detail?id=52 HTTP/1.1" 200 6232
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=51&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/about/section HTTP/1.1" 200 4216
+"GET /myapp/index/contact/section HTTP/1.1" 200 1757
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=50&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=51&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=52&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=53&searchQuery= HTTP/1.1" 200 1602
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&categoryId=-1&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/home/section HTTP/1.1" 200 4124
+"GET /myapp/index/common/section HTTP/1.1" 200 3239
+"GET /myapp/index/thing/section?page=1&pageSize=9 HTTP/1.1" 200 3276
+"GET /myapp/index/thing/section?page=1&pageSize=12&searchQuery= HTTP/1.1" 200 3446
+===============install pymysql==============
