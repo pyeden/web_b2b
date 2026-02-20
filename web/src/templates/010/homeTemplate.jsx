@@ -25,7 +25,7 @@ export default function HomeTemplate({
 
             {
                 bannerData?.length > 0 && (
-                    <div className="w-full h-[200px] md:h-[calc((100vh-80px)_/_2)] lg:h-[500px]">
+                    <div className="w-full h-[200px] md:h-[calc((100vh-80px)_/_2)] lg:h-[1040px]">
                         <Carousel bannerData={bannerData} heroText={heroText}/>
                     </div>
                 )
