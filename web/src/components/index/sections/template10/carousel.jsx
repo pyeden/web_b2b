@@ -60,7 +60,7 @@ const Carousel = ({bannerData, heroText}) => {
                                 src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${image}`}
                                 alt="Hero Section"
                                 fill
-                                sizes="100vw"
+                                sizes="(max-width: 640px) 640px, (max-width: 1200px) 100vw, 1920px"
                                 className="object-cover"
                                 quality={90}
                                 priority={index === 0}

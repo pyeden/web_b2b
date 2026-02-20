@@ -16,7 +16,7 @@ export default function Banner({title, bannerData}) {
                         alt="Banner Image" 
                         className="object-cover" 
                         fill
-                        sizes="100vw"
+                        sizes="(max-width: 640px) 640px, (max-width: 1200px) 100vw, 1920px"
                         priority
                     />
                 )

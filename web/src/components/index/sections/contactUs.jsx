@@ -10,7 +10,7 @@ export default function ContactUs({contactData}) {
                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${contactData}`}
                     alt="contact us"
                     fill
-                    sizes="100vw"
+                    sizes="(max-width: 640px) 640px, (max-width: 1200px) 100vw, 1920px"
                     priority
                     className="object-cover"
                 />

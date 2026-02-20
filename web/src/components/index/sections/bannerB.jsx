@@ -17,7 +17,7 @@ export default function BannerB({title, titleLink, bannerData}) {
                             className="object-cover"
                             fill
                             quality={90}
-                            sizes="100vw"
+                            sizes="(max-width: 640px) 640px, (max-width: 1200px) 100vw, 1920px"
                             priority
                         />
                         {/*蒙层*/}
