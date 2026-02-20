@@ -1,3 +1,4 @@
+
 'use client'
 import Image from 'next/image';
 import Link from 'next/link';
@@ -15,12 +16,12 @@ export default function AboutUs({aboutData, companyName, statsData}) {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[900px] max-h-[1200px] overflow-hidden">
                     {/* 左侧图片 */}
-                    <div className="relative h-[900px] lg:h-full overflow-hidden">
+                    <div className="relative h-[900px] lg:h-full overflow-hidden group">
                         <Image
                             src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${aboutData.aboutCover}`}
                             alt={companyName}
                             fill
-                            className="object-cover"
+                            className="object-cover object-center transition-transform duration-500 ease-in-out group-hover:scale-100 group-hover:object-contain"
                             sizes="(max-width: 768px) 100vw, 50vw"
                         />
                     </div>
@@ -55,8 +56,7 @@ export default function AboutUs({aboutData, companyName, statsData}) {
                         <div className="text-gray-700">{statsData.param_two_name}</div>
                     </div>
                     <div className="p-6 bg-mainColorLight">
-                        <div
-                            className="text-4xl font-bold text-mainColorNormal mb-2">{statsData.param_three_value}</div>
+                        <div className="text-4xl font-bold text-mainColorNormal mb-2">{statsData.param_three_value}</div>
                         <div className="text-gray-700">{statsData.param_three_name}</div>
                     </div>
                     <div className="p-6 bg-mainColorLight">
