@@ -13,7 +13,7 @@ export default function AboutUs({aboutData, companyName, statsData}) {
                     <div className="w-[60px] h-[2px] bg-mainColorNormal mx-auto"></div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[600px] max-h-[1200px] overflow-hidden">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[900px] max-h-[1200px] overflow-hidden">
                     {/* 左侧图片 */}
                     <div className="relative h-[900px] lg:h-full overflow-hidden">
                         <Image
