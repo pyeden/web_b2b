@@ -15,7 +15,7 @@ export default function AboutUs({aboutData, companyName, statsData}) {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center min-h-[600px] max-h-[1200px] overflow-hidden">
                     {/* 左侧图片 */}
-                    <div className="relative h-[600px] lg:h-full overflow-hidden">
+                    <div className="relative h-[900px] lg:h-full overflow-hidden">
                         <Image
                             src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${aboutData.aboutCover}`}
                             alt={companyName}
