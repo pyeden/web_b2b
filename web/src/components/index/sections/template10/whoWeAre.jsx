@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import lang from "@/locales";
 
@@ -17,14 +18,14 @@ export default function WhoWeAre({aboutData}) {
                     </p>
                 </div>
                 <div>
-                    <div className="relative h-60 md:h-96 bg-gray-100 rounded-lg overflow-hidden">
+                    <div className="relative h-60 md:h-96 bg-gray-100 rounded-lg overflow-hidden group">
                         <Image
                             src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${aboutData.aboutCover}`}
                             alt="About Us"
                             fill
                             quality={90}
                             sizes="(max-width: 1024px) 100vw, 50vw"
-                            className="object-cover"
+                            className="object-cover object-center transition-[object-fit] duration-500 ease-in-out group-hover:object-contain"
                             priority
                         />
                     </div>
