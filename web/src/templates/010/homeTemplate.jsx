@@ -1,7 +1,8 @@
 
 import Carousel from "@/components/index/sections/template10/carousel";
 import FtArea from "@/components/index/sections/template10/ftArea";
-import OurCategories from "@/components/index/sections/template10/ourCategories";
+// import OurCategories from "@/components/index/sections/template10/ourCategories";
+import OurCategories from "@/components/index/sections/template10/ourCategoriesNew";
 import FeaturedProducts from "@/components/index/sections/template10/featuredProducts";
 import CompanyNews from "@/components/index/sections/template10/companyNews";
 import AboutUs from "@/components/index/sections/template10/aboutUs";
