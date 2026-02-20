@@ -35,7 +35,8 @@ export default function HomeTemplate({
 
             {
                 categoryData?.length > 0 && (
-                    <OurCategories categoryData={categoryData}/>
+                    // <OurCategories categoryData={categoryData}/>
+                <a/>
                 )
             }
 
