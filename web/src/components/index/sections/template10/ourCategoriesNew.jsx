@@ -190,10 +190,10 @@ function ProductCard({ product, index }) {
           >
             Get Quote
           </Link>
-          <button className="flex-1 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium border-2 border-gray-200 bg-white hover:bg-mainColorNormal hover:text-white hover:border-mainColorNormal transition-colors duration-300 h-10 px-4 py-2">
-            <DownloadIcon />
-            Datasheet
-          </button>
+          {/*<button className="flex-1 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium border-2 border-gray-200 bg-white hover:bg-mainColorNormal hover:text-white hover:border-mainColorNormal transition-colors duration-300 h-10 px-4 py-2">*/}
+          {/*  <DownloadIcon />*/}
+          {/*  Datasheet*/}
+          {/*</button>*/}
         </div>
       </div>
     </div>
