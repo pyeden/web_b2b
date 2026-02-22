@@ -16,7 +16,7 @@ function ProductCard({ product }) {
                             src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${cover}`}
                             alt={product.title}
                             fill
-                            quality={90}
+                            quality={100}
                             className="object-cover"
                             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
                         />

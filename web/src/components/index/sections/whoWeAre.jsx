@@ -22,7 +22,7 @@ export default function WhoWeAre({aboutData}) {
                             src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${aboutData.aboutCover}`}
                             alt="About Us"
                             fill
-                            quality={90}
+                            quality={100}
                             sizes="(max-width: 1024px) 100vw, 50vw"
                             className="object-cover"
                             priority

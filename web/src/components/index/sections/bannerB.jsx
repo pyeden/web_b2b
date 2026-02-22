@@ -16,7 +16,7 @@ export default function BannerB({title, titleLink, bannerData}) {
                             alt="Banner Image"
                             className="object-cover"
                             fill
-                            quality={90}
+                            quality={100}
                             sizes="(max-width: 640px) 640px, (max-width: 1200px) 100vw, 1920px"
                             priority
                         />

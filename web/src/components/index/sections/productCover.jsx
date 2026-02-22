@@ -123,7 +123,7 @@ const ProductCover = ({product}) => {
                                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${image}`}
                                     alt="Product Cover"
                                     fill
-                                    quality={90}
+                                    quality={100}
                                     sizes="(max-width: 768px) 100vw, 50vw"
                                     className="object-cover cursor-pointer transition-transform duration-300 hover:scale-[1.02]"
                                     onClick={() => openModal(image)}
@@ -226,7 +226,7 @@ const ProductCover = ({product}) => {
                                 alt={`Product View ${currentIndex + 1}`}
                                 width={900}
                                 height={900}
-                                quality={90}
+                                quality={100}
                                 sizes="90vw"
                                 className="max-w-full max-h-[85vh] object-cover shadow-2xl"
                                 loading="eager"

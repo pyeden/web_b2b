@@ -62,7 +62,7 @@ const Carousel = ({bannerData, heroText}) => {
                                 fill
                                 sizes="(max-width: 640px) 640px, (max-width: 1200px) 100vw, 1920px"
                                 className="object-cover"
-                                quality={90}
+                                quality={100}
                                 priority={index === 0}
                             />
                             {/*蒙层 - 只在有 heroText 时显示 */}
