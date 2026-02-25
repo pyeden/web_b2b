@@ -44,7 +44,8 @@ export default function HomeTemplate({
 
             {
                 featuredData?.length > 0 && (
-                    <FeaturedProducts featuredData={featuredData}/>
+                    // <FeaturedProducts featuredData={featuredData}/>
+                    <a></a>
                 )
             }
 
@@ -54,7 +55,7 @@ export default function HomeTemplate({
             {
                 commentData && commentData.length > 0 && (
                      // <CustomersSay commentData={commentData}/>
-                <a></a>
+                    <a></a>
                 )
             }
 
@@ -62,7 +63,7 @@ export default function HomeTemplate({
             {
                 newsData?.length > 0 && (
                     // <CompanyNews newsData={newsData}/>
-                <a/>
+                    <a/>
                 )
             }
             {
