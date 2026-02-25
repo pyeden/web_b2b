@@ -5,17 +5,9 @@ import lang from "@/locales";
 export default function WhoWeAre({ aboutData }) {
 
     return (
-        <div className="bg-mainColorLight py-8 lg:py-20 h-[900px]">
+        <div className="bg-mainColorLight py-8 lg:py-20 h-[1000px]">
             <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8 px-6 lg:px-8 h-full">
-                <div className="flex flex-col p-0 h-full">
-                    <div className="h-1 w-28 bg-gradient-to-r from-mainColorNormal to-mainColorNormalAlpha-50 mb-6"></div>
-                    <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-6">{lang.WhoWeAre}</h2>
-                    <p
-                        className="flex-1 text-gray-700 mb-4 overflow-auto relative"
-                        dangerouslySetInnerHTML={{ __html: aboutData.aboutText }}
-                    >
-                    </p>
-                </div>
+
                 <div className="flex flex-col h-full">
                     <div className="relative flex-1 bg-gray-100 rounded-lg overflow-hidden group">
                         <Image
@@ -28,6 +20,15 @@ export default function WhoWeAre({ aboutData }) {
                             priority
                         />
                     </div>
+                </div>
+                <div className="flex flex-col p-0 h-full">
+                    <div className="h-1 w-28 bg-gradient-to-r from-mainColorNormal to-mainColorNormalAlpha-50 mb-6"></div>
+                    <h2 className="text-2xl lg:text-4xl font-bold text-gray-900 mb-6">{lang.WhoWeAre}</h2>
+                    <p
+                        className="flex-1 text-gray-700 mb-4 overflow-auto relative"
+                        dangerouslySetInnerHTML={{ __html: aboutData.aboutText }}
+                    >
+                    </p>
                 </div>
             </div>
         </div>
