@@ -6,6 +6,7 @@ import OurFactory from "@/components/index/sections/ourFactory";
 import Certification from "@/components/index/sections/template10/certification";
 import BannerB from "@/components/index/sections/bannerB";
 import WhoWeAre from "@/components/index/sections/template10/whoWeAre";
+import CustomersSay from "@/components/index/sections/template10/customersSay";
 
 export default function AboutTemplate({
                                           bannerData,
@@ -30,8 +31,7 @@ export default function AboutTemplate({
 
                 {
                     commentData && commentData.length > 0 && (
-                         // <CustomersSay commentData={commentData}/>
-                    <a></a>
+                     <CustomersSay commentData={commentData}/>
                     )
                 }
 
