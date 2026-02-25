@@ -56,7 +56,8 @@
     --main-color-deep-009:  123, 42%, 50%;
 
     /* 模板10的颜色 */
-    --main-color-light-010:  22, 93%, 90%;
+    /*--main-color-light-010:  22, 93%, 90%;*/
+    --main-color-light-010:  0 0% 100%;
     /*--main-color-normal-010: 22, 93%, 55%;*/
     --main-color-normal-010: 188 94% 42%;
     --main-color-deep-010:  22, 93%, 50%;
