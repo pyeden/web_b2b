@@ -4,7 +4,7 @@ import lang from "@/locales"
 export default function Footer({sectionData}) {
 
     return (
-        <div className="bg-mainColorLight">
+        <div className="bg-mainColorLight"  style={{ backgroundColor: 'hsl(var(--primary))' }}>
             {/* Footer */}
             <footer className="py-12 lg:py-16">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
