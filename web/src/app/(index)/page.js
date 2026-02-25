@@ -4,6 +4,9 @@ import {headers} from "next/headers";
 import {getIp} from "@/utils/tools";
 
 export default async function Home() {
+
+    const aboutSectionData = await getAboutSectionDataCached();
+
     const sectionData = await getSectionDataCached();
 
     // 获取模板id
@@ -20,7 +23,8 @@ export default async function Home() {
         commentData: sectionData.commentData,
         newsData: sectionData.newsData,
         heroText: sectionData.heroText,
-        contactData: sectionData.contactData
+        contactData: sectionData.contactData,
+        advantageData: aboutSectionData.advantageData
     };
 
     // 动态导入对应模板
@@ -73,6 +77,25 @@ const getSectionDataCached = cache(async () => {
             'x-forwarded-for': getIp()
         };
         const {code, msg, data} = await api.get('/myapp/index/home/section', {headers});
+        if (code === 0) {
+            return data;
+        } else {
+            console.error(`获取数据错误: ${msg}`);
+            return null;
+        }
+    } catch (err) {
+        console.error("获取数据失败:", err);
+        return null;
+    }
+})
+
+const getAboutSectionDataCached = cache(async () => {
+    try {
+        const headers = {
+            'Content-Type': 'application/json',
+            'x-forwarded-for': getIp()
+        };
+        const {code, msg, data} = await api.get('/myapp/index/about/section', {headers});
         if (code === 0) {
             return data;
         } else {

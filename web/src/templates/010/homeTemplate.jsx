@@ -7,6 +7,7 @@ import FeaturedProducts from "@/components/index/sections/template10/featuredPro
 import CompanyNews from "@/components/index/sections/template10/companyNews";
 import AboutUs from "@/components/index/sections/template10/aboutUs";
 import CustomersSay from "@/components/index/sections/template10/customersSay";
+import Advantages from "@/components/index/sections/advantages";
 
 
 export default function HomeTemplate({
@@ -18,7 +19,8 @@ export default function HomeTemplate({
                                          statsData,
                                          commentData,
                                          newsData,
-                                         heroText
+                                         heroText,
+                                         advantageData
                                      }) {
     return (
         <div className="flex flex-col">
@@ -59,10 +61,15 @@ export default function HomeTemplate({
 
             {
                 newsData?.length > 0 && (
-                    <CompanyNews newsData={newsData}/>
+                    // <CompanyNews newsData={newsData}/>
+                <a/>
                 )
             }
-
+            {
+                advantageData?.length > 0 && (
+                    <Advantages advantageData={advantageData}/>
+                )
+            }
 
 
         </div>
