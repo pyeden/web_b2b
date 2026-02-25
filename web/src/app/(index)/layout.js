@@ -36,14 +36,18 @@ export const metadata = {
     icons: [{rel: "icon", url: "/favicon.ico"}],
 }
 
+// --main-color-light: var(--main-color-light-${templateId});
+// --main-color-normal: var(--main-color-normal-${templateId});
+// --main-color-deep: var(--main-color-deep-${templateId});
+
 // 生成内联样式，确保主题变量优先设置
 const getInitialThemeStyles = () => {
     const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID || '001';
     return `
         :root {
-            --main-color-light: var(--main-color-light-${templateId});
-            --main-color-normal: var(--main-color-normal-${templateId});
-            --main-color-deep: var(--main-color-deep-${templateId});
+            --main-color-light: var(--background);
+            --main-color-normal: var(--background);
+            --main-color-deep: var(--background);
         }
     `;
 };
