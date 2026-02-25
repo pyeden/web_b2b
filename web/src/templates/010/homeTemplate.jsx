@@ -47,11 +47,12 @@ export default function HomeTemplate({
             }
 
 
-            <AboutUs aboutData={aboutData} companyName={companyName} statsData={statsData}/>
+            {/*<AboutUs aboutData={aboutData} companyName={companyName} statsData={statsData}/>*/}
 
             {
                 commentData && commentData.length > 0 && (
-                     <CustomersSay commentData={commentData}/>
+                     // <CustomersSay commentData={commentData}/>
+                <a></a>
                 )
             }
 
