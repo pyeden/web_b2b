@@ -4,6 +4,9 @@ import {getIp} from "@/utils/tools";
 
 
 export default async function Page() {
+
+    const sectionData = await getHomeSectionDataCached();
+
     const {
         bannerData,
         aboutData,
@@ -26,7 +29,8 @@ export default async function Page() {
         advantageData,
         companyImageData,
         certificationImageData,
-        contactData
+        contactData,
+        commentData: sectionData.commentData,
     };
 
     const AboutTemplateModule = await import(`@/templates/${templateId}/aboutTemplate`);
@@ -77,6 +81,26 @@ const getSectionDataCached = cache(async () => {
             'x-forwarded-for': getIp()
         };
         const {code, msg, data} = await api.get('/myapp/index/about/section', {headers});
+        if (code === 0) {
+            return data;
+        } else {
+            console.error(`获取数据错误: ${msg}`);
+            return null;
+        }
+    } catch (err) {
+        console.error("获取数据失败:", err);
+        return null;
+    }
+})
+
+
+const getHomeSectionDataCached = cache(async () => {
+    try {
+        const headers = {
+            'Content-Type': 'application/json',
+            'x-forwarded-for': getIp()
+        };
+        const {code, msg, data} = await api.get('/myapp/index/home/section', {headers});
         if (code === 0) {
             return data;
         } else {

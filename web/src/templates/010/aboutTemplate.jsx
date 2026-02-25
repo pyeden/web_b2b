@@ -15,7 +15,8 @@ export default function AboutTemplate({
                                           advantageData,
                                           companyImageData,
                                           certificationImageData,
-                                          contactData
+                                          contactData,
+                                          commentData
                                       }) {
     return (
         <div className="flex flex-col">
@@ -27,8 +28,15 @@ export default function AboutTemplate({
                 {/* Who We Are 区域 */}
                 <WhoWeAre aboutData={aboutData}/>
 
+                {
+                    commentData && commentData.length > 0 && (
+                         // <CustomersSay commentData={commentData}/>
+                    <a></a>
+                    )
+                }
+
                 {/*Our mission section */}
-                <OurMission missionData={missionData} statsData={statsData}/>
+                {/*<OurMission missionData={missionData} statsData={statsData}/>*/}
 
                 {/* Our Advantages 区域 */}
                 {advantageData?.length > 0 && (
@@ -37,12 +45,14 @@ export default function AboutTemplate({
 
                 {/* Our Factory 区域 */}
                 {companyImageData?.length > 0 && (
-                    <OurFactory companyImageData={companyImageData}/>
+                    // <OurFactory companyImageData={companyImageData}/>
+                    <a/>
                 )}
 
                 {/* certification 区域 */}
                 {certificationImageData?.length > 0 && (
-                    <Certification certificationImageData={certificationImageData}/>
+                    // <Certification certificationImageData={certificationImageData}/>
+                    <a/>
                 )}
 
                 <ContactUs contactData={contactData}/>
