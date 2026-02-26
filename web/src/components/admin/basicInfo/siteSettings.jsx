@@ -97,6 +97,7 @@ const SiteSettings = () => {
             formData.append('site_copyright', currentItem.site_copyright || '');
             formData.append('site_code', currentItem.site_code || '');
             formData.append('site_gaid', currentItem.site_gaid || '');
+            formData.append('site_switch_solution', currentItem.site_switch_product || '1');
             formData.append('site_switch_product', currentItem.site_switch_product || '1');
             formData.append('site_switch_about', currentItem.site_switch_about || '1');
             formData.append('site_switch_contact', currentItem.site_switch_contact || '1');
