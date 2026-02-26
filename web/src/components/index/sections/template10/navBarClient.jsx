@@ -355,6 +355,9 @@ export function MobileNav({sectionData, mobileMenuOpen, setMobileMenuOpen}) {
 
 // 导航栏客户端包装器组件
 export default function NavBarClient({sectionData}) {
+
+    console.log(sectionData)
+
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const pathname = usePathname();
     const [current, setCurrent] = useState(pathname);

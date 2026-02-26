@@ -178,17 +178,17 @@ function SolutionCard({ solution }) {
           </div>
         </div>
 
-        <div className="flex gap-4 pt-4">
+        <div className="flex gap-3">
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm bg-accent text-accent-foreground hover:bg-turquoise-light shadow-glow hover:shadow-elevated font-semibold h-11 rounded-md px-8 transition-all"
+            className="flex-1 inline-flex items-center justify-center rounded-md text-sm font-semibold bg-mainColorNormal text-white hover:bg-mainColorDeep transition-colors duration-300 h-10 px-4 py-2"
           >
-            Request Quote
-            <ArrowRight size={20} className="ml-2" />
+            Get Quote
           </Link>
-          <button className="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium border-2 border-input bg-background hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 transition-all">
-            Download Case Study
-          </button>
+          {/*<button className="flex-1 inline-flex items-center justify-center gap-2 rounded-md text-sm font-medium border-2 border-gray-200 bg-white hover:bg-mainColorNormal hover:text-white hover:border-mainColorNormal transition-colors duration-300 h-10 px-4 py-2">*/}
+          {/*  <DownloadIcon />*/}
+          {/*  Datasheet*/}
+          {/*</button>*/}
         </div>
       </div>
     </div>
