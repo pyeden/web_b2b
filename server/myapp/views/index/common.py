@@ -32,6 +32,7 @@ def section(request):
         cached_data = cache.get(cache_key)
 
         if cached_data:
+            print(f"===={cached_data}")
             return APIResponse(code=0, msg='查询成功', data=cached_data)
 
         # 获取所有需要的数据
@@ -82,7 +83,6 @@ def section(request):
 
         # 添加首页
         nav_data['navigationItems'].append(create_nav_item("Home", "/"))
-        nav_data['navigationItems'].append(create_nav_item("Solution", "/solutions"))
 
         # 将分类数据转换为前端所需的格式
         formatted_categories = []
@@ -172,5 +172,5 @@ def section(request):
 
         # 缓存数据
         cache.set(cache_key, data, 3600)  # 缓存3600秒
-
+        print(f"===={data}")
         return APIResponse(code=0, msg='查询成功', data=data)
