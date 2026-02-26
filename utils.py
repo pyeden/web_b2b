@@ -105,10 +105,14 @@ if __name__ == "__main__":
 
     # 2. 批量转换（列表）
     results = batch_images_to_base64([
-        "C:/Users/Administrator/Desktop/网站资料/categories/urchip-uhf.jpg",
-        "C:/Users/Administrator/Desktop/网站资料/categories/smart-linens.jpg",
-        "C:/Users/Administrator/Desktop/网站资料/categories/urtag-silicone.jpg",
-        "C:/Users/Administrator/Desktop/网站资料/categories/rfid-readers.jpg",
+        # "C:/Users/Administrator/Desktop/网站资料/categories/urchip-uhf.jpg",
+        # "C:/Users/Administrator/Desktop/网站资料/categories/smart-linens.jpg",
+        # "C:/Users/Administrator/Desktop/网站资料/categories/urtag-silicone.jpg",
+        # "C:/Users/Administrator/Desktop/网站资料/categories/rfid-readers.jpg",
+        "C:/Users/Administrator/Desktop/网站资料/categories/1.jpg",
+        "C:/Users/Administrator/Desktop/网站资料/categories/2.jpg",
+        "C:/Users/Administrator/Desktop/网站资料/categories/3.jpg",
+        "C:/Users/Administrator/Desktop/网站资料/categories/4.jpg",
     ])
     for path, b64 in results.items():
         print(b64)
