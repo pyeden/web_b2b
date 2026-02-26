@@ -129,6 +129,8 @@ def section(request):
                 else:
                     nav_data['navigationItems'].append(create_nav_item(name, href))
 
+        nav_data['navigationItems'].insert(0, create_nav_item("Solution", "/solutions"))
+
         # 构建页脚数据
         footer_data = {
             'navData': [create_nav_item("Home", "/", "link")],
@@ -163,6 +165,8 @@ def section(request):
             switch_attr, name, href = item[0], item[1], item[2]
             if getattr(basicSite, switch_attr) == '1':
                 footer_data['navData'].append({"name": name, "href": href})
+
+        footer_data['navData'].insert(0, {"name": "Solution", "href": "/solutions"})
 
         # 组合最终数据
         data = {
