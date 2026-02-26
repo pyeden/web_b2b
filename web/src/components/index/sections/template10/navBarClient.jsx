@@ -363,6 +363,7 @@ export default function NavBarClient({sectionData}) {
     const [current, setCurrent] = useState(pathname);
 
     useEffect(() => {
+        console.log(sectionData)
         setCurrent(pathname);
     }, [pathname]);
 
