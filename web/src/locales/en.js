@@ -8,6 +8,7 @@ const en = {
     Case: "Case",
     News: "News",
     Product: "Product",
+    Solution: "Solution",
     GetInTouch: "Get In Touch",
     // Hero section
     HeroTitle: "Source Directly from Verified Suppliers",

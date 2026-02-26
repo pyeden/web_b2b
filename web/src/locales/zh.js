@@ -6,6 +6,7 @@ const zh = {
     Case: "案例",
     News: "新闻",
     Product: "产品",
+    Solution: "解决方案",
     GetInTouch: "取得联系",
     GetInTouchTip: "我们随时为您解答任何问题",
     SendUsAMessage: "给我们留言",
