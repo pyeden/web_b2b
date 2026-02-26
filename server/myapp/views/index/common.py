@@ -82,6 +82,7 @@ def section(request):
 
         # 添加首页
         nav_data['navigationItems'].append(create_nav_item("Home", "/"))
+        nav_data['navigationItems'].append(create_nav_item("Solution", "/solutions"))
 
         # 将分类数据转换为前端所需的格式
         formatted_categories = []
