@@ -42,7 +42,7 @@ const advantagesList = [
     }
 ];
 
-export default function Advantages({advantageData}) {
+export default function Advantages({advantageData, largeImages = false}) {
     return (
         <section className="py-16 bg-mainColorLight">
             <div className="container mx-auto px-4">
@@ -59,12 +59,12 @@ export default function Advantages({advantageData}) {
                     {advantageData.map((advantage) => (
                         <div key={advantage.id} 
                              className="bg-white rounded-lg p-8 flex flex-col items-center text-center transition-all duration-300 hover:shadow-lg border border-gray-200 ">
-                            <div className="mb-5 rounded-full p-3 flex items-center justify-center border border-mainColorLight relative w-[72px] h-[72px]">
+                            <div className={`mb-5 rounded-full flex items-center justify-center border border-mainColorLight relative ${largeImages ? "p-6 w-[144px] h-[144px]" : "p-3 w-[72px] h-[72px]"}`}>
                                 <Image
                                     src={`${process.env.NEXT_PUBLIC_BASE_URL}/upload/img/${advantage.advantage_image}`}
                                     alt={advantage.advantage_title}
                                     fill
-                                    sizes="72px"
+                                    sizes={largeImages ? "144px" : "72px"}
                                     className="object-contain p-3"
                                 />
                             </div>

@@ -40,7 +40,7 @@ export default function AboutTemplate({
 
                 {/* Our Advantages 区域 */}
                 {advantageData?.length > 0 && (
-                    <Advantages advantageData={advantageData}/>
+                    <Advantages advantageData={advantageData} largeImages/>
                 )}
 
                 {/* Our Factory 区域 */}
