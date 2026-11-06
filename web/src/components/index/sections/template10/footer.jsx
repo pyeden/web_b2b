@@ -10,7 +10,7 @@ export default function Footer({sectionData}) {
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                         <div className="text-center md:text-left">
-                            <h3 className="text-lg font-semibold text-white mb-2 pb-2 ">
+                            <h3 className="text-lg font-semibold text-black mb-2 pb-2 ">
                                 {lang.QuickLinks}
                             </h3>
                             <ul className="space-y-2">
@@ -29,7 +29,7 @@ export default function Footer({sectionData}) {
                         </div>
                         {/* 产品分类 */}
                         <div className="text-center md:text-left">
-                            <h3 className="text-lg font-semibold text-white mb-2 pb-2">
+                            <h3 className="text-lg font-semibold text-black mb-2 pb-2">
                                 {lang.ProductCategories}
                             </h3>
                             <ul className="space-y-2">
@@ -47,7 +47,7 @@ export default function Footer({sectionData}) {
                             </ul>
                         </div>
                         <div className="text-center md:text-left">
-                            <h3 className="text-lg font-semibold text-white mb-2 pb-2">
+                            <h3 className="text-lg font-semibold text-black mb-2 pb-2">
                                 {lang.ContactUs}
                             </h3>
                             <ul className="space-y-3">
