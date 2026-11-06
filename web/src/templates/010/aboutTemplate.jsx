@@ -21,9 +21,11 @@ export default function AboutTemplate({
                                       }) {
     return (
         <div className="flex flex-col">
+            {/* 隐藏页面顶部 banner
             <div className="w-full h-[200px]">
                 <BannerB title="About Us" titleLink="/about" bannerData={bannerData}/>
             </div>
+            */}
 
             <div>
                 {/* Who We Are 区域 */}

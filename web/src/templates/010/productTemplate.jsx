@@ -13,9 +13,11 @@ export default function ProductTemplate({
                                         }) {
     return (
         <div className="">
+            {/* 隐藏页面顶部 banner
             <div className="w-full h-[200px]">
                 <BannerB title="Products" titleLink="/product" bannerData={bannerData}/>
             </div>
+            */}
 
             <ProductList
                 categoryId={categoryId}

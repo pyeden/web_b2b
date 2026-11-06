@@ -7,9 +7,11 @@ import BannerB from "@/components/index/sections/bannerB";
 export default function ContactTemplate({bannerData, contactData, recommendData}){
     return (
         <div className="flex flex-col">
+            {/* 隐藏页面顶部 banner
             <div className="w-full h-[200px]">
                 <BannerB title="Contact Us" titleLink="/contact" bannerData={bannerData}/>
             </div>
+            */}
 
             <GetInTouch contactData={contactData}/>
 
