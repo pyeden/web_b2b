@@ -68,7 +68,7 @@ export default function HomeTemplate({
             }
             {
                 advantageData?.length > 0 && (
-                    <Advantages advantageData={advantageData}/>
+                    <Advantages advantageData={advantageData} largeImages/>
                 )
             }
 
