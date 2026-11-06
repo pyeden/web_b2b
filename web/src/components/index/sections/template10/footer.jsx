@@ -90,6 +90,7 @@ export default function Footer({sectionData}) {
                     {/* Social Icons */}
                     <div
                         className="flex flex-col sm:flex-row justify-between items-center border-t border-gray-400 pt-8">
+                        {/* 隐藏版权与 Powered by
                         <div className="flex flex-col text-sm text-gray-500 mb-4 sm:mb-0">
                             <p className="hover:text-mainColorNormal transition-colors flex items-center justify-center md:justify-start">Copyright &copy; {new Date().getFullYear()} {sectionData.contactData.global_company_name}
                             </p>
@@ -98,6 +99,7 @@ export default function Footer({sectionData}) {
                                                               className="text-gray-500 hover:text-mainColorDeep">FK</a>
                             </p>
                         </div>
+                        */}
                         <div className="flex flex-wrap justify-center space-x-4">
                             {sectionData.contactData.global_facebook?.length > 0 && (
                                 <Link href={sectionData.contactData.global_facebook}
