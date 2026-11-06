@@ -114,7 +114,7 @@ def section(request):
             ("site_switch_product", "Product", "/product", "dropdown", formatted_categories),
             ("site_switch_about", "AboutUs", "/about"),
             ("site_switch_news", "News", "/news"),
-            ("site_switch_download", "Download", "/download"),
+            # ("site_switch_download", "Download", "/download"),  # 隐藏 Download 导航入口
             ("site_switch_case", "Case", "/case"),
             ("site_switch_faq", "Faq", "/faq"),
             ("site_switch_contact", "ContactUs", "/contact")
