@@ -12,7 +12,6 @@ export default function NavBar({sectionData}) {
                     aria-label="Global"
                     className="h-20 mx-auto max-w-7xl lg:px-8 flex items-stretch "
                 >
-                    {/* 隐藏顶部 logo
                     <div className="flex items-center ">
                         <Link href="/" className="-m-1.5 p-1.5">
                             <span className="sr-only">Logo</span>
@@ -23,7 +22,6 @@ export default function NavBar({sectionData}) {
                             />
                         </Link>
                     </div>
-                    */}
 
                     {/* 客户端导航组件 */}
                     <NavBarClient sectionData={sectionData}/>
