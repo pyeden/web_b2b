@@ -177,6 +177,7 @@ export default function Footer({sectionData}) {
                                     wechatId={sectionData.contactData.global_wechat}
                                     qrCodeImage={sectionData.contactData.global_wechat_qrcode}
                                     iconSize="h-5 w-5"
+                                    colorStyle="text-black hover:text-mainColorNormal"
                                 />
                             )}
                         </div>
